@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>前端套路深，不要瞎折腾</title>
+  <title>91前端网 - 每多学一点知识，就少写一行代码</title>
   <subtitle>从未如此简单有趣</subtitle>
   <link href="/atom.xml" rel="self"/>
   
@@ -9,7 +9,7 @@
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>Bogon</name>
+    <name>shenliyang</name>
     
   </author>
   
