@@ -1,1 +1,91 @@
-window.onload=function(){function e(e){if(e){var n=e.length;if(n>0)for(var o=t()+window.innerHeight,i=0;i<n;i++)!function(t){var n=e[t],i=n.getBoundingClientRect().top+window.pageYOffset-document.documentElement.clientTop;if(o>=i&&n.getAttribute("data-src")&&n.getAttribute("data-src").length>0){if("img"===n.nodeName.toLowerCase())n.src=n.getAttribute("data-src"),n.style.display="block";else{var c=new Image;c.onload=function(){n.innerHTML=""},c.src=n.getAttribute("data-src"),n.style.backgroundImage="url("+n.getAttribute("data-src")+")"}n.removeAttribute("data-src")}}(i)}}function t(){return n.scrollTop||document.documentElement.scrollTop}var n=document.body,o=document.getElementById("mnav"),i=document.getElementById("main-menu"),c=document.getElementById("process"),l=document.querySelectorAll(".img-ajax"),r=(document.getElementById("comments-count"),document.getElementById("gitcomment"),null);o.onclick=function(){"-1"!=i.getAttribute("class").indexOf("in")?i.setAttribute("class","collapse navbar-collapse"):i.setAttribute("class","collapse navbar-collapse in")};var a=!0;!function(e){if(1==/iphone|ios|android|ipod/i.test(navigator.userAgent.toLowerCase())&&"mobile"!=function(e,t){var n=new RegExp("(?:&|/?)"+t+"=([^&$]+)").exec(e);return n?n[1]:""}(location.search,"from")){var t=document.body.clientWidth,n=t/4.5+"px";document.documentElement.style.fontSize=n,window.onresize=function(){var e=document.body.clientWidth;n=e/4.5+"px",document.documentElement.style.fontSize=n},a=!1}else document.documentElement.style.fontSize="610%"}();var d=function(){c&&(c.style.width=t()/(n.scrollHeight-window.innerHeight)*100+"%"),e(l)};d(),window.addEventListener("scroll",function(){clearTimeout(r),r=setTimeout(function(){d()},100)})};
+/**! app.js  */
+window.onload = function() {
+    var $body = document.body,
+        $mnav = document.getElementById("mnav"), //获取导航三角图标
+        $mainMenu = document.getElementById("main-menu"), //手机导航
+        $process = document.getElementById('process'), //进度条
+        $ajaxImgs = document.querySelectorAll('.img-ajax'), //图片懒加载
+        $commentsCounter = document.getElementById('comments-count'),
+        $gitcomment = document.getElementById("gitcomment"),
+        scrollTimer = null;
+
+    //手机菜单导航
+    $mnav.onclick = function(){  
+        var navOpen = $mainMenu.getAttribute("class");
+        if(navOpen.indexOf("in") != '-1'){
+            $mainMenu.setAttribute("class","collapse navbar-collapse"); 
+        } else {
+            $mainMenu.setAttribute("class","collapse navbar-collapse in");
+        }
+    };
+
+    //设备判断
+    var isPC = true;
+    (function(designPercent) {
+        function params(u, p) {
+            var m = new RegExp("(?:&|/?)" + p + "=([^&$]+)").exec(u);
+            return m ? m[1] : '';
+        }
+        if (/iphone|ios|android|ipod/i.test(navigator.userAgent.toLowerCase()) == true && params(location.search, "from") != "mobile") {
+            var mainWidth = document.body.clientWidth;
+            var fontSize = mainWidth / designPercent + 'px';
+            document.documentElement.style.fontSize = fontSize;
+            window.onresize = function() {
+                var mainWidth = document.body.clientWidth;
+                fontSize = mainWidth / designPercent + 'px';
+                document.documentElement.style.fontSize = fontSize;
+            };
+            isPC = false;
+        } else document.documentElement.style.fontSize = '610%';
+    })(450 / 100);
+
+    //首页文章图片懒加载
+    function imgsAjax($targetEles) {
+        if (!$targetEles) return;
+        var _length = $targetEles.length;
+        if (_length > 0) {
+            var scrollBottom = getScrollTop() + window.innerHeight;
+            for (var i = 0; i < _length; i++) {
+                (function(index) {
+                    var $this = $targetEles[index];
+                    var $this_offsetZero = $this.getBoundingClientRect().top + window.pageYOffset - document.documentElement.clientTop;
+                    if (scrollBottom >= $this_offsetZero && $this.getAttribute('data-src') && $this.getAttribute('data-src').length > 0) {
+                        if ($this.nodeName.toLowerCase() === 'img') {
+                            $this.src = $this.getAttribute('data-src');
+                            $this.style.display = 'block';
+                        } else {
+                            var imgObj = new Image();
+                            imgObj.onload = function() {
+                                $this.innerHTML = "";
+                            };
+                            imgObj.src = $this.getAttribute('data-src');
+                            $this.style.backgroundImage = "url(" + $this.getAttribute('data-src') + ")";
+                        }
+                        $this.removeAttribute('data-src'); //为了优化，移除
+                    }
+                })(i);
+            }
+        }
+    }
+    //获取滚动高度
+    function getScrollTop() {
+        return ($body.scrollTop || document.documentElement.scrollTop);
+    }
+    //滚动回调
+    var scrollCallback = function() {
+        if ($process) {
+            $process.style.width = (getScrollTop() / ($body.scrollHeight - window.innerHeight)) * 100 + "%";
+        }
+        
+        imgsAjax($ajaxImgs);
+        
+    };
+    scrollCallback();
+    //监听滚动事件
+    window.addEventListener('scroll', function() {
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(function() {
+            scrollCallback();
+        }, 100);
+    });
+};
