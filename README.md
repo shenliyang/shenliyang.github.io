@@ -1,4 +1,5 @@
 # hexo-theme-snippet
+
 Snippet 简洁而不简单，也许是一款你寻找已久的hexo主题
 
 [在线预览 Demo](http://shenliyang.github.io)
@@ -46,14 +47,25 @@ Snippet 简洁而不简单，也许是一款你寻找已久的hexo主题
     npm install hexo-deployer-git --save
 ```
 
-### Download | 下载主题文件
+### Download | 下载主题
 
 有两种方式下载主题--下载 `*.zip` 文件和通过 `git` ，无论哪种方式请确认下载的文件目录和博客站点的theme子目录中的landscape
 
+从Github上获取代码：
 ``` bash
     git clone git://github.com/heroicyang/hexo-theme-snippet.git themes/snippet
 ``` 
-### Configure | 配置
+
+### Update theme | 更新主题
+
+更新主题代码
+
+``` bash
+    cd themes/snippet
+    git pull
+``` 
+
+### Configure | 主题配置
 
 主题配置：
 
@@ -229,11 +241,13 @@ version: 1.0.0
 
 ### Engineer | 打包构建工具 
 
-Gulp搭建使用: [Gulp入门指南
+Gulp搭建使用： [Gulp入门指南
 ](http://www.gulpjs.com.cn/docs/getting-started/)
 
-- 拷贝gulpfile.js文件到项目根目录下
-- npm install
+拷贝gulpfile.js文件到项目根目录下(非主题跟目录),安装Gulp项目依赖
+``` bash
+npm install
+```
 
 ***推荐插件:***
 
@@ -271,13 +285,18 @@ gulp 执行启用主题开发模式
 
 ## Thanks | 感谢
 
-在设计这款主题的时候参考了好多主题和博客的设计和创意，才能在这么短的时间内成型一个博客主题，在这里对他们真挚的感谢！ 主题还有很多不完善之处，如果觉得本主题还不错，请点下小星星！您的Star才是后续更新最大的动力。
+在设计这款主题的时候参考了好多主题和博客的设计和创意，深表感谢！ 
+
+## Contribute | 贡献
+欢迎大家提issue或者pull request，主题还有很多不完善之处，开源项目也离不开大家的批评指正。
+
+如果觉得本主题还不错，请点下[Star](https://github.com/shenliyang/hexo-theme-snippet/stargazers)支持和鼓励才是后续更新最大的动力。
 
 ## Update log | 重要更新
 
-### V1.0.0
+### v1.0.0
 
-- 提交至官方theme仓库，Snippet主题正式上线
+- 提交至官方hexo-theme-snippet仓库，Snippet主题正式上线
 
 ## License
 
