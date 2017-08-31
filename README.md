@@ -32,7 +32,8 @@ Snippet 简洁而不简单，也许是一款你寻找已久的hexo主题
 
 ### Prerequisites | 环境搭建
 
-`Node.js` 环境、`Git` 环境以及 `Hexo` ,如果你尚未安装或者不了解 `Hexo`，请参考 [官方教程](https://hexo.io/zh-cn/docs/index.html) 进行了解以及安装。
+`Node.js` 环境、`Git` 环境以及 `Hexo` ,如果你尚未安装或者不了解 `Hexo`，请参考 [官方教程](https://hexo.io/zh-cn/docs/index.html) 进行了解以及安装。如果需要构建工具客自行安装，或使用本主题的Gulp方式。
+
 
 ### Dependencies | 安装依赖
 
@@ -48,21 +49,14 @@ Snippet 简洁而不简单，也许是一款你寻找已久的hexo主题
 ### Download | 下载主题文件
 
 有两种方式下载主题--下载 `*.zip` 文件和通过 `git` ，无论哪种方式请确认下载的文件目录和博客站点的theme子目录中的landscape
-目录同一个级别，如下：
 
 ``` bash
-    .
-    ├── landscape
-    └── snippet
-```
-
+    git clone git://github.com/heroicyang/hexo-theme-snippet.git themes/snippet
+``` 
 ### Configure | 配置
 
-接下来就是配置的问题了，分为主题配置和站点配置，主要是主题配置。
+主题配置：
 
-#### Theme Configure | 主题配置
-
-各个设置项均在以下的主题文件中以注释的形式进行说明：
 
 ``` yaml
 
@@ -196,19 +190,19 @@ gitment:
   perPage: 
   maxCommentHeight:
   
-###友言评论
+###友言评论(默认选项)
 uyan:
   enable: true
-  uyan_id: 1966422
+  uyan_id: 
 
 
-## 网盟CNZZ网站统计 [传送门](http://www.umeng.com/)
+## 网盟CNZZ网站统计 (http://www.umeng.com/)
 cnzz_anaylytics: 
 
-## 百度网站统计 [传送门](https://tongji.baidu.com/)
+## 百度网站统计 (https://tongji.baidu.com/)
 baidu_anaylytics: 
 
-## 百度文章推送 [传送门](http://zhanzhang.baidu.com)
+## 百度文章推送 (http://zhanzhang.baidu.com)
 baidu_push:
 
 ## ICON配置
@@ -232,23 +226,51 @@ version: 1.0.0
 
 监听4000端口，使用浏览器打开地址`http://localhost:4000`进行预览。
 
-**Tips:**
+### Engineer | 打包构建工具 
 
-如果你为了更好地写博客，推荐两个Hexo插件：`hexo-browsersync` 和 `hexo-admin`。
+Gulp搭建使用: [Gulp入门指南
+](http://www.gulpjs.com.cn/docs/getting-started/)
+
+- 拷贝gulpfile.js文件到项目根目录下
+- npm install
+
+***推荐插件:***
+
+如果你为了更好地写博客，推荐Hexo插件： `hexo-admin`。
 
 ``` bash
-    npm install hexo-browsersync --save
     npm install hexo-admin --save
 ```
+提供类似后台的功能。使用参考[官方Repo](https://github.com/jaredly/hexo-admin)
 
-`hexo-browsersync` 主要用于监听刷新，`hexo-admin` 提供类似后台的功能。
+## Theme deploy | 主题发布
 
-前者无需配置，按照平常启用server预览即可。`hexo-admin` 的使用参考[官方Repo](https://github.com/jaredly/hexo-admin)
+1. 清空hexo静态文件和缓存，并重新生成
+``` bash
+    hexo clean && hexo g
+```
+
+2. gulp 执行默认任务，部署前代码处理
+``` bash
+    gulp 或者 gulp default
+```
+
+3. 当gulp执行完成，并提示  `please execute： hexo d` 时，可以进行发布
+``` bash
+    hexo d 或者 gulp deploy
+```
+
+## Theme dev | 主题开发
+gulp 执行启用主题开发模式
+``` bash
+    gulp dev 
+```
+会监听样式less或者JS文件的变动。然后执行上面的【主题发布】即可。
 
 
 ## Thanks | 感谢
 
-在设计这款主题的时候参考了好多主题和博客的设计和创意，才能在这么短的时间内成型一个博客主题，真的特别感谢！
+在设计这款主题的时候参考了好多主题和博客的设计和创意，才能在这么短的时间内成型一个博客主题，在这里对他们真挚的感谢！ 主题还有很多不完善之处，如果觉得本主题还不错，请点下小星星！您的Star才是后续更新最大的动力。
 
 ## Update log | 重要更新
 
