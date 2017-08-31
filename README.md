@@ -1,20 +1,26 @@
 # hexo-theme-snippet
-超简洁的hexo主题
+Snippet 简洁而不简单，也许是一款你寻找已久的hexo主题
 
-[在线预览 Preview]()
+[在线预览 Preview](http://shenliyang.github.io)
 
-![hexo-theme-snippet]()
-
-
+![hexo-theme-snippet](http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/snippet-screenshots.png)
 
 
 ## Features | 特点
 
-- [x] 原生Javascript实现
+- [x] 原生JavaScript实现
+- [x] 样式支持CSS预处理器Less，方便主题自定义
 - [x] 文章过期提醒功能
 - [x] 网站公告功能
 - [x] 首页图片懒加载
-- [x] 响应式
+- [x] 首页文章缩略图自动检索文章内图片，支持自动随机图片
+- [x] 支持响应式
+- [x] 对IE浏览器的检测和警告
+- [x] 评论系统支持友言和Gitment
+- [x] 版权信息可配置
+- [x] 支持网站统计和文章推送
+- [x] 移动端的简洁设计
+- [x] 支持代码高亮并支持自定义高亮样式
 
 
 
@@ -189,6 +195,11 @@ gitment:
   labels: 
   perPage: 
   maxCommentHeight:
+  
+###友言评论
+uyan:
+  enable: true
+  uyan_id: 1966422
 
 
 ## 网盟CNZZ网站统计 [传送门](http://www.umeng.com/)
@@ -206,7 +217,7 @@ fontAwesome: //cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css
 #网站主题配置
 since: 2017
 robot: 'all' ### 控制搜索引擎的抓取和索引编制行为，默认为all，搜索 `meta name="robots"` 或请参考： https://support.google.com/webmasters/answer/79812?hl=zh-Hans
-version: 1.1.0
+version: 1.0.0
 
 
 ```
@@ -216,10 +227,10 @@ version: 1.1.0
 ### Run | 运行预览
 
 ``` bash
-    hexo clean && hexo g && hexo s -p 4300
+    hexo clean && hexo g && hexo s -p 4000
 ```
 
-监听4300端口，使用浏览器打开地址`http://localhost:4300`进行预览。
+监听4000端口，使用浏览器打开地址`http://localhost:4000`进行预览。
 
 **Tips:**
 
@@ -234,11 +245,6 @@ version: 1.1.0
 
 前者无需配置，按照平常启用server预览即可。`hexo-admin` 的使用参考[官方Repo](https://github.com/jaredly/hexo-admin)
 
-
-
-## Languages | 支持的语言
-
-支持英语，简体中文和繁体中文。能力有限，欢迎翻译其他语言。
 
 ## Thanks | 感谢
 
