@@ -1,7 +1,7 @@
 # hexo-theme-snippet
 Snippet 简洁而不简单，也许是一款你寻找已久的hexo主题
 
-[在线预览 Preview](http://shenliyang.github.io)
+[在线预览 Demo](http://shenliyang.github.io)
 
 ![hexo-theme-snippet](http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/snippet-screenshots.png)
 
@@ -32,7 +32,7 @@ Snippet 简洁而不简单，也许是一款你寻找已久的hexo主题
 
 ### Prerequisites | 环境搭建
 
-`Node.js` 环境、`Git` 环境以及 `Hexo` ,如果你尚未安装或者不了解 `Hexo`，请参考 [官方教程](https://hexo.io/zh-cn/docs/index.html) 进行了解以及安装。如果需要构建工具客自行安装，或使用本主题的Gulp方式。
+`Node.js` 环境、`Git` 环境以及 `Hexo` ,如果你尚未安装或者不了解 `Hexo`，请参考 [官方教程](https://hexo.io/zh-cn/docs/index.html) 进行了解以及安装。如果需要构建工具请自行安装，或使用本主题的Gulp方式。
 
 
 ### Dependencies | 安装依赖
@@ -101,8 +101,8 @@ widgets:
 
 ## notification config --网站公告设置,支持 html 和 纯文本
 notification: |- 
-            <p>主题Snippet v1.0.0版本即将上线，敬请期待~！<br>
-            主题作者：<a href="https://github.com/snippet"
+            <p>主题Snippet v1.1.0版本即将上线，敬请期待~！<br>
+            主题作者：<a href="https://github.com/shenliyang/hexo-theme-snippet"
             title="fork me" target="_blank">Snippet</a></p>
 
 ## 文章分类设置{@cate_config:{@show_count:是否显示数字，@show_current: 是否高亮当前category}}
@@ -116,7 +116,7 @@ arch_config:
    show_count: true
    order: -1
 
-## 彩色标签云设置{@tagcloud_config:/*https://hexo.io/zh-cn/docs/helpers.html#tagcloud*/}
+## 彩色标签云设置{@tagcloud_config:/*参数参考：https://hexo.io/zh-cn/docs/helpers.html#tagcloud*/}
 tagcloud_config:
    min_font: 1
    max_font: 1
@@ -167,7 +167,8 @@ excerptLength: 120
 
 
 ## 代码高亮配置{@highlightTheme:/*参考网站：https://cdnjs.com/libraries/highlight.js*/}
-## 配置主题名称，例如：monokai-sublime，vs2015,默认为default
+## 可配置主题名称[default,github,foundation,googlecode,monokai-sublime,monokai,monokai,xcode,vs2015,tomorrow,hybrid]
+
 highlightTheme: default
 
 
@@ -196,16 +197,16 @@ uyan:
   uyan_id: 
 
 
-## 网盟CNZZ网站统计 (http://www.umeng.com/)
+## 网盟CNZZ网站统计 /*参考网站：http://www.umeng.com/ */
 cnzz_anaylytics: 
 
-## 百度网站统计 (https://tongji.baidu.com/)
+## 百度网站统计 /*参考网站: https://tongji.baidu.com/ */
 baidu_anaylytics: 
 
-## 百度文章推送 (http://zhanzhang.baidu.com)
+## 百度文章推送 /*参考网站: http://zhanzhang.baidu.com */
 baidu_push:
 
-## ICON配置
+## ICON配置 (不配则启用本地Font Icon)
 fontAwesome: //cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css
 
 #网站主题配置
