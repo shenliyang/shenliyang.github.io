@@ -246,7 +246,7 @@ Gulp搭建使用： [Gulp入门指南
 
 拷贝gulpfile.js文件到项目根目录下(非主题跟目录),安装Gulp项目依赖
 ``` bash
-npm install
+    npm install
 ```
 
 ***推荐插件:***
@@ -290,7 +290,7 @@ gulp 执行启用主题开发模式
 ## Contribute | 贡献
 欢迎大家提issue或者pull request，主题还有很多不完善之处，开源项目也离不开大家的批评指正。
 
-如果觉得本主题还不错，请点下[Star](https://github.com/shenliyang/hexo-theme-snippet/stargazers)支持和鼓励才是后续更新最大的动力。
+如果觉得本主题还不错，欢迎[Star](https://github.com/shenliyang/hexo-theme-snippet/stargazers)下，支持和鼓励才是后续更新最大的动力。
 
 ## Update log | 重要更新
 
