@@ -19,7 +19,7 @@ after_script:
   - git config user.email "job@shenliyang.com"
   - git add .
   - git commit -m "Update docs"
-  - git push --force --quiet "https://920fe5c190e5adb707b61e0a5a47503285564979@$github.com/shenliyang/shenliyang.github.io.git" master:master
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 # E: Build LifeCycle
 
 branches:
@@ -28,5 +28,5 @@ branches:
 env:
  global:
    - GH_REF: github.com/shenliyang/shenliyang.github.io.git
-   - GH_TOKEN: 920fe5c190e5adb707b61e0a5a47503285564979
+   - GH_TOKEN: snippet
 
