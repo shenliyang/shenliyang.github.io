@@ -28,5 +28,5 @@ branches:
 env:
  global:
    - GH_REF: github.com/shenliyang/shenliyang.github.io.git
-   - GH_TOKEN: shenliyang.github.io-dev
+   - GH_TOKEN: 920fe5c190e5adb707b61e0a5a47503285564979
 
