@@ -14,8 +14,7 @@ before_script:
   - npm install -g gulp 
 
 script:
-  - hexo clean
-  - hexo generate
+  - hexo g
   - gulp 
 
 after_script:
