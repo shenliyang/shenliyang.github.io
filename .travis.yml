@@ -16,10 +16,11 @@ before_script:
 script:
   - hexo g
   - gulp 
-  - touch README.md
-  - echo "你要追加的内容" >> README.md
+  - pwd
+  - cd ./source/
   - cat README.md
-
+  - echo "haha" >> README.md
+  - cat README.md
 
 after_script:
   - cd ./public
