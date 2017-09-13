@@ -16,9 +16,9 @@ before_script:
 script:
   - hexo g
   - gulp 
+  - echo 'test' >> txt.md
 
 after_script:
-  - echo 'test' > ./source/README.md
   - cd ./public
   - git init
   - git config user.name "shenliyang"
