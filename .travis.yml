@@ -17,9 +17,7 @@ script:
   - hexo g
   - gulp 
   - pwd
-  - cd ./source/
-  - cat README.md
-  - echo "haha" >> README.md
+  - echo "haha123" >> ./source/README.md
   - cat README.md
 
 after_script:
