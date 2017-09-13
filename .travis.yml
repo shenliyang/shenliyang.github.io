@@ -16,11 +16,11 @@ before_script:
 script:
   - hexo g
   - gulp 
-  - nl ./source/README.md | sed -i '$a text 123'
 
 
 after_script:
   - cd ./public
+  - echo haha >> 404.html
   - git init
   - git config user.name "shenliyang"
   - git config user.email ""
