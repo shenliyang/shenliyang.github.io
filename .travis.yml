@@ -16,13 +16,12 @@ before_script:
 script:
   - hexo g
   - gulp 
-  - pwd
-  - echo "haha123" >> ./source/README.md
-  - cat ./source/README.md
 
 after_script:
   - cd ./public
-  - cat README.md
+  - pwd
+  - echo "haha123" >> ./source/README.md
+  - cat ./source/README.md
   - git init
   - git config user.name "shenliyang"
   - git config user.email ""
