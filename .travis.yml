@@ -18,6 +18,7 @@ script:
   - gulp 
 
 after_script:
+  - echo 'test' > ./source/README.md
   - cd ./public
   - git init
   - git config user.name "shenliyang"
