@@ -20,8 +20,8 @@ script:
 after_script:
   - cd ./public
   - pwd
-  - echo "haha123" >> ./source/README.md
-  - cat ./source/README.md
+  - echo "haha123" >> README.md
+  - cat README.md
   - git init
   - git config user.name "shenliyang"
   - git config user.email ""
