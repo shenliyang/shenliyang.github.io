@@ -16,7 +16,7 @@ before_script:
 script:
   - hexo g
   - gulp 
-  - nl ./source/README.md | sed 'text 123'
+  - nl ./source/README.md | sed -i 'text 123'
 
 
 after_script:
