@@ -16,7 +16,8 @@ before_script:
 script:
   - hexo g
   - gulp 
-  - echo text >> ./source/README.md
+  - sed -i 'test-sed' ./source/README.md
+  - cat ./source/README.md
 
 after_script:
   - cd ./public
