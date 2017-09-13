@@ -16,12 +16,13 @@ before_script:
 script:
   - hexo g
   - gulp 
-  - echo "你要追加的内容" >> ./source/README.md
+  - touch README.md
+  - echo "你要追加的内容" >> README.md
+  - cat README.md
 
 
 after_script:
   - cd ./public
-  - echo haha >> 404.html
   - git init
   - git config user.name "shenliyang"
   - git config user.email ""
