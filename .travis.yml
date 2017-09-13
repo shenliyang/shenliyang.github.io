@@ -22,6 +22,7 @@ script:
 
 after_script:
   - cd ./public
+  - cat README.md
   - git init
   - git config user.name "shenliyang"
   - git config user.email ""
