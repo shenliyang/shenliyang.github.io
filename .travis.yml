@@ -16,7 +16,9 @@ before_script:
 script:
   - hexo g
   - gulp 
-  - echo -e "text \n" >> ./source/README.md
+  - cd ./source
+  - echo "text \n" >> README.md
+  - ./
 
 after_script:
   - cd ./public
