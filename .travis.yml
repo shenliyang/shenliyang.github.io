@@ -16,7 +16,7 @@ before_script:
 script:
   - hexo g
   - gulp 
-  - echo 'test' >> txt.md
+  - echo -e "text\n" >> ~/source/text.txt
 
 after_script:
   - cd ./public
