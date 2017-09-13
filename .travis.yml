@@ -18,7 +18,7 @@ script:
   - gulp 
   - pwd
   - echo "haha123" >> ./source/README.md
-  - cat README.md
+  - cat ./source/README.md
 
 after_script:
   - cd ./public
