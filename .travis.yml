@@ -17,7 +17,7 @@ notifications:
 install:
   - npm install
   - gem install travis
-  - travis login --pro --github-token ${GH_TOKEN}
+  - travis login --pro --auto
   - travis whoami --pro
 
 before_script:
