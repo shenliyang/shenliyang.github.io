@@ -17,7 +17,6 @@ notifications:
 install:
   - npm install
   - gem install travis
-  - travis history --limit 3 --pull-request 5
   - travis logs
   - travis show
 
