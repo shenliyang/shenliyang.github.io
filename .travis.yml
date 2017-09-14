@@ -22,7 +22,7 @@ install:
 before_script:
   - export TZ='Asia/Shanghai'
   - npm install -g gulp 
-  #- chmod +x travis.sh
+  - chmod +x _travis.sh
 
 script:
   - hexo g
@@ -41,12 +41,13 @@ after_script:
   - cd ./public
   - echo -e "$TRAVIS_TEST_RESULT" >> README.md
   - cat README.md
-#  - git init
-#  - git config user.name "shenliyang"
-#  - git config user.email ""
-#  - git add .
-#  - git commit -m "Build by Travis CI at `date +"%Y-%m-%d\ %H:%M:%S"`"
-#  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+  
+  - git init
+  - git config user.name "shenliyang"
+  - git config user.email ""
+  - git add .
+  - git commit -m "Build by Travis CI at `date +"%Y-%m-%d\ %H:%M:%S"`"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 
 # E: Build LifeCycle
 
