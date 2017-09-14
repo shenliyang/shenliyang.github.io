@@ -16,10 +16,8 @@ notifications:
 # S: Build Lifecycle
 install:
   - npm install
-  - gem install travis
-  - travis logs
-  - travis show
-
+#  - gem install travis
+#  - travis login  --pro  --github-token ${GH_TOKEN}
 
 before_script:
   - export TZ='Asia/Shanghai'
