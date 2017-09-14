@@ -10,14 +10,14 @@ notifications:
   email:
     recipients:
       - 3075822809@qq.com
-    on_success: always
-    on_failure: always
+    on_success: never
+    on_failure: change
 
 # S: Build Lifecycle
 install:
   - npm install
-#  - gem install travis
-#  - travis login  --pro  --github-token ${GH_TOKEN}
+  - gem install travis
+  - travis login  --pro  --github-token ${GH_TOKEN}
 
 before_script:
   - export TZ='Asia/Shanghai'
@@ -33,7 +33,7 @@ after_success:
  # - for i in $(seq 1 $LAST_BUILD_NUMBER ); do  travis logs $i --delete --force ; done
 
 after_script:
-  - ./_travis.sh
+#  - ./_travis.sh
   
 # E: Build LifeCycle
 
