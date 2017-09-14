@@ -6,27 +6,39 @@ cache:
   directories:
     - "node_modules"
 
+notifications:
+  email:
+    recipients:
+      - 3075822809@qq.com
+    on_success: always
+    on_failure: always
+
 # S: Build Lifecycle
 install:
   - npm install
 
 before_script:
   - npm install -g gulp 
+  #- chmod +x travis.sh
 
 script:
   - hexo g
   - gulp 
 
+after_success:
+-  travis report --pro
+
 after_script:
   - cd ./public
-  - echo "Build log 20170913" >> README.md
+  - echo -e "$TRAVIS_TEST_RESULT" >> README.md
   - cat README.md
-  - git init
-  - git config user.name "shenliyang"
-  - git config user.email ""
-  - git add .
-  - git commit -m "Build by Travis CI"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+#  - git init
+#  - git config user.name "shenliyang"
+#  - git config user.email ""
+#  - git add .
+#  - git commit -m "Build by Travis CI"
+#  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+
 # E: Build LifeCycle
 
 branches:
