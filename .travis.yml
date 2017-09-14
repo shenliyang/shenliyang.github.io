@@ -20,7 +20,9 @@ install:
   - travis login  --pro --github-token=${GH_TOKEN}
   - travis whoami --pro
 
+
 before_script:
+  - export TZ='Asia/Shanghai'
   - npm install -g gulp 
   #- chmod +x travis.sh
 
@@ -29,10 +31,15 @@ script:
   - gulp 
 
 after_success:
- - LAST_BUILD_NUMBER=68
- - for i in $(seq 1 $LAST_BUILD_NUMBER ); do  travis logs $i --delete --force ; done
+ # - LAST_BUILD_NUMBER=68
+ # - for i in $(seq 1 $LAST_BUILD_NUMBER ); do  travis logs $i --delete --force ; done
 
 after_script:
+  - git clone https://${GH_REF} .deploy_git
+  - cd .deploy_git
+  - git checkout master
+  - cd ../
+  - mv .deploy_git/.git/ ./public/
   - cd ./public
   - echo -e "$TRAVIS_TEST_RESULT" >> README.md
   - cat README.md
@@ -40,7 +47,7 @@ after_script:
 #  - git config user.name "shenliyang"
 #  - git config user.email ""
 #  - git add .
-#  - git commit -m "Build by Travis CI"
+#  - git commit -m "Build by Travis CI at `date +"%Y-%m-%d\ %H:%M:%S"`"
 #  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 
 # E: Build LifeCycle
