@@ -14,16 +14,18 @@ function default(){
 
   git clone https://${GH_REF} .deploy_git
   cd .deploy_git
+
   git checkout master
-
   cd ../
-  mv .deploy_git/.git/ ./public/
 
+  mv .deploy_git/.git/ ./public/
   cd ./public
 
 cat <<EOF >> README.md 
-Site updated time: $time 
-Site updated state: $TRAVIS_TEST_RESULT
+持续集成 | 集成结果
+---|---
+完成时间 | $time
+完成状态 | passing
      
 EOF
 
