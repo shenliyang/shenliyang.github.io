@@ -17,6 +17,8 @@ notifications:
 install:
   - npm install
   - gem install travis
+  - travis login --pro
+  - travis whoami --pro
 
 before_script:
   - npm install -g gulp 
