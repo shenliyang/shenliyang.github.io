@@ -1,15 +1,24 @@
+#--------------------------------------------
 #!/bin/bash
+# author：shenliyang
+# site：https://github.com/shenliyang
+# slogan：梦想还是要有的，万一实现了呢。
+#--------------------------------------------
 
 #定义时间
 time=`date +%Y-%m-%d\ %H:%M:%S`
 
+#执行成功
 function success(){
    echo "success"
 }
 
+#执行失败
 function failure(){
    echo "failure"
 }
+
+#默认执行
 function default(){
 
   git clone https://${GH_REF} .deploy_git
@@ -28,8 +37,6 @@ cat <<EOF >> README.md
 完成状态 | passing
      
 EOF
-
-  cat README.md
 
   git init
   git config user.name "shenliyang"
