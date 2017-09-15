@@ -35,10 +35,9 @@ after_success:
 after_script:
 #  - ./_travis.sh
 
- - echo "${repository} (${commit}) : ${message} ${foo} ${build_url}"
- - echo '${repository} (${commit}) : ${message} ${foo} ${build_url}'
- - echo  $TRAVIS_BRANCH 
- - echo $TRAVIS_PULL_REQUEST
+ - ${repository} (${commit}) : ${message} ${foo} ${build_url}'
+ - $TRAVIS_BRANCH 
+ - $TRAVIS_PULL_REQUEST
 
 # E: Build LifeCycle
 
