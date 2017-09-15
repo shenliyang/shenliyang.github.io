@@ -35,8 +35,7 @@ after_success:
 after_script:
 #  - ./_travis.sh
 
-%{repository} (%{commit}) : %{message} %{foo} 
-%{build_url}
+${repository} (${commit}) : ${message} ${foo} 
 
 # E: Build LifeCycle
 
