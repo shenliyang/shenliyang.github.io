@@ -34,8 +34,7 @@ cat <<EOF >> README.md
 持续集成 | 集成结果
 ---|---
 完成时间 | $time
-完成状态 | passing
-     
+完成状态 | passing    
 EOF
 
   git init
