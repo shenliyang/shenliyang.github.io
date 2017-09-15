@@ -33,7 +33,21 @@ after_success:
  # - for i in $(seq 1 $LAST_BUILD_NUMBER ); do  travis logs $i --delete --force ; done
 
 after_script:
-  - ./_travis.sh
+ # - ./_travis.sh
+  RELEASE_DATE=`date '+%Y-%m-%d %H:%M:%S'`  
+  RELEASE_NOTES="Build: $TRAVIS_BUILD_NUMBER\nUploaded: $RELEASE_DATE"
+  $TRAVIS_PULL_REQUEST
+  $TRAVIS_BRANCH
+
+  if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then  
+  echo "This is a pull request. No deployment will be done."  
+  exit 0  
+  fi  
+
+    if [[ "$TRAVIS_BRANCH" != "dev" ]]; then  
+      echo "Testing on a branch other than dev. No deployment will be done."  
+      exit 0  
+    fi 
 
 # E: Build LifeCycle
 
