@@ -38,6 +38,7 @@ after_script:
   RELEASE_NOTES="Build: $TRAVIS_BUILD_NUMBER\nUploaded: $RELEASE_DATE"
   $TRAVIS_PULL_REQUEST
   $TRAVIS_BRANCH
+  
 
   if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then  
   echo "This is a pull request. No deployment will be done."  
