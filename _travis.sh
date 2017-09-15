@@ -34,7 +34,9 @@ cat <<EOF >> README.md
 持续集成 | 集成结果
 ---|---
 完成时间 | $time
-完成状态 | passing    
+完成状态 | passing   
+ 推送  | $TRAVIS_PULL_REQUEST
+ 分支  | $TRAVIS_BRANCH
 EOF
 
   git init

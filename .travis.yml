@@ -33,10 +33,8 @@ after_success:
  # - for i in $(seq 1 $LAST_BUILD_NUMBER ); do  travis logs $i --delete --force ; done
 
 after_script:
- # - ./_travis.sh
+  - ./_travis.sh
 
-  $TRAVIS_PULL_REQUEST
-  $TRAVIS_BRANCH
 
 
 # E: Build LifeCycle
