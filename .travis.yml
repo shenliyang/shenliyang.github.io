@@ -34,10 +34,7 @@ after_success:
 
 after_script:
 #  - ./_travis.sh
-
- - ${repository} (${commit}) : ${message} ${foo} ${build_url}'
- - $TRAVIS_BRANCH 
- - $TRAVIS_PULL_REQUEST
+- ifconfig
 
 # E: Build LifeCycle
 
