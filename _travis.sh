@@ -34,10 +34,15 @@ cat <<EOF >> README.md
 持续集成 | 集成结果
 ---|---
 完成时间 | $time
-完成状态 | passing   
- 推送  | $TRAVIS_PULL_REQUEST
- 分支  | $TRAVIS_COMMIT | $TRAVIS_COMMIT_RANGE
- $TRAVIS_COMMIT_MESSAGE | $TRAVIS_OS_NAME
+完成状态 | passing  
+部署系统 | $TRAVIS_OS_NAME 
+部署类型 | $TRAVIS_EVENT_TYPE
+是否推送 | $TRAVIS_PULL_REQUEST
+Job ID   | $TRAVIS_JOB_ID
+Job NUM  | $TRAVIS_JOB_NUMBER
+提交分支 | $TRAVIS_COMMIT 
+提交信息 | $TRAVIS_COMMIT_MESSAGE 
+测试结果 | $TRAVIS_TEST_RESULT
 EOF
 
   git init
