@@ -17,13 +17,13 @@ Travis-CI是一个开源的持续构建项目，能够测试和部署；Travis-C
 ## 自动部署集成日志 
 持续集成 | 集成结果
 ---|---
-完成时间 | 2017-09-19 11:53:16
+完成时间 | 2017-09-19 14:58:28
 完成状态 | passing  
 部署系统 | linux 
 部署类型 | push
 是否推送 | false
-Job ID   | 277138170
-Job NUM  | 98.1
-提交分支 | e98b9d4b35c6e4d8e208ee74481b4857d3251b7a 
-提交信息 | update travis variables 
+Job ID   | 277176004
+Job NUM  | 99.1
+提交分支 | cf95cad7cac8477a894cc76e5ed8d19f580cff85 
+提交信息 | update README.md 
 测试结果 | 0
