@@ -36,7 +36,8 @@ cat <<EOF >> README.md
 完成时间 | $time
 完成状态 | passing   
  推送  | $TRAVIS_PULL_REQUEST
- 分支  | $TRAVIS_COMMIT | $TRAVIS_COMMIT_MESSAGE | $TRAVIS_result
+ 分支  | $TRAVIS_COMMIT | $TRAVIS_COMMIT_RANGE
+ $TRAVIS_COMMIT_MESSAGE | $TRAVIS_OS_NAME
 EOF
 
   git init
