@@ -327,6 +327,10 @@ pre {
 /*====================================================
     main post area
 ====================================================*/
+#main {
+  background: #fff;
+  padding: 10px 0;
+}
 .post {
   padding: 20px;
   background: #fff;
