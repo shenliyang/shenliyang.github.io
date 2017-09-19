@@ -14,6 +14,7 @@ then
 	TRAVIS_RESULT = 'successful'
 else
     TRAVIS_RESULT = 'broken'
+fi
 
 #执行成功
 function success(){
