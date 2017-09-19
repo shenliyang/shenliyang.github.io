@@ -8,6 +8,13 @@
 #定义时间
 time=`date +%Y-%m-%d\ %H:%M:%S`
 
+#判断部署结果
+if($TRAVIS_TEST_RESULT == 0)
+then 
+	TRAVIS_RESULT = 'successful'
+else
+    TRAVIS_RESULT = 'broken'
+
 #执行成功
 function success(){
    echo "success"
@@ -31,18 +38,17 @@ function default(){
   cd ./public
 
 cat <<EOF >> README.md 
-持续集成 | 集成结果
+部署状态 | 集成结果
 ---|---
 完成时间 | $time
-完成状态 | passing  
-部署系统 | $TRAVIS_OS_NAME 
+部署环境 | $TRAVIS_OS_NAME + $TRAVIS_NODE_VERSION
 部署类型 | $TRAVIS_EVENT_TYPE
-是否推送 | $TRAVIS_PULL_REQUEST
+构建仓库 | $TRAVIS_REPO_SLUG
 Job ID   | $TRAVIS_JOB_ID
 Job NUM  | $TRAVIS_JOB_NUMBER
 提交分支 | $TRAVIS_COMMIT 
 提交信息 | $TRAVIS_COMMIT_MESSAGE 
-测试结果 | $TRAVIS_TEST_RESULT
+部署结果 | TRAVIS_RESULT
 EOF
 
   git init
@@ -57,11 +63,11 @@ EOF
 case $1 in 
     "success")
 	     success
-       ;;
+       	 ;;
     "failure")
 	     failure
 	     ;;
 	         *) 
-       default	
+         default	
 esac
 
