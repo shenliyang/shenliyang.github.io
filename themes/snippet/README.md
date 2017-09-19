@@ -2,6 +2,13 @@
 
 Snippet 简洁而不简单，也许是一款你寻找已久的hexo主题
 
+[![Build Status](https://www.travis-ci.org/shenliyang/hexo-theme-snippet.svg?branch=master)](https://www.travis-ci.org/shenliyang/hexo-theme-snippet)
+[![codebeat badge](https://codebeat.co/badges/6ef2dcd2-af90-40e0-9628-ac689441f774)](https://codebeat.co/projects/github-com-shenliyang-hexo-theme-snippet-master)
+[![mnt-image](https://img.shields.io/maintenance/yes/2017.svg)](../../commits/master)
+[![hexo version](https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg)](http://hexo.io)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/shenliyang/hexo-theme-snippet/blob/master/LICENSE)
+
+
 [在线预览 Demo](http://shenliyang.github.io)
 
 ![hexo-theme-snippet](http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/snippet-screenshots1000.jpg)
@@ -171,7 +178,7 @@ defaultImgs:
   - /img/default-1.jpg
   
 ## 懒加载图片占位符
-placeholder: http://via.placeholder.com/220x160
+placeholder: ./img/loading.gif
 
 
 ### 截取文章首页描述字数
