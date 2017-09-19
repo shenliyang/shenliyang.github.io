@@ -327,6 +327,9 @@ pre {
 /*====================================================
     main post area
 ====================================================*/
+.main-content {
+  background-color: #fff;
+}
 .post {
   padding: 20px;
   background: #fff;
@@ -800,6 +803,18 @@ pre {
 }
 .sidebar .widget ul li {
   list-style: none;
+}
+.sidebar .widget .archive-list-count,
+.sidebar .widget .category-list-count {
+  margin-left: 5px;
+}
+.sidebar .widget .archive-list-count:before,
+.sidebar .widget .category-list-count:before {
+  content: "(";
+}
+.sidebar .widget .archive-list-count:after,
+.sidebar .widget .category-list-count:after {
+  content: ")";
 }
 .sidebar .widget-box {
   background: #fff;
