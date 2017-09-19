@@ -33,9 +33,9 @@ function default(){
   #判断部署结果
   if [$TRAVIS_TEST_RESULT eq 0]
   then 
-	  TRAVIS_RESULT = "successful"
+	  RESULT = "successful"
   else
-	  TRAVIS_RESULT = "broken"
+	  RESULT = "broken"
   fi
 
 cat <<EOF >> README.md 
@@ -48,9 +48,9 @@ cat <<EOF >> README.md
 仓库地址 | $TRAVIS_REPO_SLUG | owner_name/repo_name
 Job ID   | $TRAVIS_JOB_ID | number
 Job NUM  | $TRAVIS_JOB_NUMBER | number.number
-提交分支 | $TRAVIS_COMMIT | message
-提交信息 | $TRAVIS_COMMIT_MESSAGE | hash 16位
-部署结果 | $TRAVIS_RESULT | successful \| broken
+提交分支 | $TRAVIS_COMMIT | hash 16位
+提交信息 | $TRAVIS_COMMIT_MESSAGE | message
+部署结果 | $RESULT | successful \| broken
 EOF
 
   git init
