@@ -9,7 +9,7 @@
 time=`date +%Y-%m-%d\ %H:%M:%S`
 
 #判断部署结果
-if($TRAVIS_TEST_RESULT == 0)
+if [$TRAVIS_TEST_RESULT eq 0]
 then 
 	TRAVIS_RESULT = 'successful'
 else
