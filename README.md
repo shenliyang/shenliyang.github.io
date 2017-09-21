@@ -17,12 +17,12 @@ Travis-CI是一个开源的持续构建项目，能够测试和部署；Travis-C
 ## 自动部署集成日志 
 部署状态 | 集成结果 | 参考值
 ---|---|---
-完成时间 | 2017-09-19 16:16:16 | yyyy-mm-dd hh:mm:ss
+完成时间 | 2017-09-21 15:50:27 | yyyy-mm-dd hh:mm:ss
 部署环境 | linux + stable | window \| linux + stable
 部署类型 | push | push \| pull_request \| api \| cron
 启用Sudo | false | false \| true
 仓库地址 | shenliyang/shenliyang.github.io | owner_name/repo_name
-提交分支 | 48eb98908ad3f6a7ba3b1dc7a213195c769fb4bb | hash 16位
-提交信息 | modify theme README.md | message
-Job ID   | 277198278 | number
-Job NUM  | 106.1 | number.number
+提交分支 | 7210e84e0a7d563562bfdebdbc89468d80e40384 | hash 16位
+提交信息 | 增加《史上最全的Webstorm快捷键大全》文章 | message
+Job ID   | 278079710 | number
+Job NUM  | 107.1 | number.number
