@@ -36,6 +36,7 @@ widgets:
 - category
 - archive
 - tagcloud
+- stick
 - friends
 
 # 各个小工具的设置
