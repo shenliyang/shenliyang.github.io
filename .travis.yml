@@ -11,7 +11,7 @@ cache:
 notifications:
   email:
     recipients:
-      - 3075822809@qq.com
+      - snippet@91h5.cc
     on_success: never
     on_failure: always
 
@@ -36,8 +36,6 @@ after_success:
 
 after_script:
   - ./_travis.sh
-
-
 
 # E: Build LifeCycle
 

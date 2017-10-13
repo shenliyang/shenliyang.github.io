@@ -1,7 +1,7 @@
 #--------------------------------------------
 #!/bin/bash
 # author：shenliyang
-# site：https://github.com/shenliyang
+# website：https://github.com/shenliyang
 # slogan：梦想还是要有的，万一实现了呢。
 #--------------------------------------------
 
@@ -39,9 +39,9 @@ cat <<EOF >> README.md
 启用Sudo | $TRAVIS_SUDO | false \| true
 仓库地址 | $TRAVIS_REPO_SLUG | owner_name/repo_name
 提交分支 | $TRAVIS_COMMIT | hash 16位
-提交信息 | $TRAVIS_COMMIT_MESSAGE | message
-Job ID   | $TRAVIS_JOB_ID | number
-Job NUM  | $TRAVIS_JOB_NUMBER | number.number
+提交信息 | $TRAVIS_COMMIT_MESSAGE |
+Job ID   | $TRAVIS_JOB_ID | 
+Job NUM  | $TRAVIS_JOB_NUMBER | 
 EOF
 
   git init
@@ -52,15 +52,14 @@ EOF
   git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 } 
 
-
 case $1 in 
     "success")
 	     success
-       	 ;;
+       ;;
     "failure")
 	     failure
 	     ;;
 	         *) 
-         default	
+       default	
 esac
 
