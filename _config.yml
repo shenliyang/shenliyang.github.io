@@ -11,9 +11,9 @@ language: zh-CN
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://www.91h5.cc
 root: /
-permalink: archives/:year/:id.html
+permalink: archives/:abbrlink.html
 permalink_defaults:
 
 # Directory
