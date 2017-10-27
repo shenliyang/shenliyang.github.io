@@ -1,10 +1,13 @@
 ---
 title: 史上最全的Webstorm快捷键及技巧
-date: 2017-09-21 10:44:48  
-categories: 工具  
-tags: [Webstrorm]
+categories: 工具
+tags:
+  - Webstrorm
 comments: true
-img: http://imgmini.dfshurufa.com/mobile/20160325172758_220bfff17cc1d8fa3fb6c8fae974bde9_2.jpeg
+img: >-
+  http://imgmini.dfshurufa.com/mobile/20160325172758_220bfff17cc1d8fa3fb6c8fae974bde9_2.jpeg
+abbrlink: 47814
+date: 2017-09-21 10:44:48
 ---
 
 > Webstorm是一款前端开发神器，此文介绍webstorm的快捷键和技巧分享。

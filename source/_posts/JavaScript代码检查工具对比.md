@@ -1,9 +1,12 @@
 ---
-title: JavaScript代码检查工具对比  #文章标题
-date: 2017-04-03 15:51:30  #时间，一般不用改
-categories: 前端  #目录分类
-tags: [JavaScript,jsLint]  #标签，格式可以是[Hexo,总结]，中间用英文逗号分开
+title: JavaScript代码检查工具对比
+categories: 前端
+tags:
+  - JavaScript
+  - jsLint
 comments: true
+abbrlink: 26064
+date: 2017-04-03 15:51:30
 ---
 
 ![image](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503571860528&di=0fecd1d75a0d57851a782f0da053a047&imgtype=jpg&src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D3845209004%2C4113255300%26fm%3D214%26gp%3D0.jpg)

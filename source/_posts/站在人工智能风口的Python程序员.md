@@ -1,10 +1,11 @@
 ---
 title: 站在人工智能风口的Python程序员
-date: 2017-08-25 16:12:19
-categories: 后端  #目录分类
-tags: python  #标签，格式可以是[Hexo,总结]，中间用英文逗号分开
+categories: 后端
+tags: python
 comments: true
-img: http://img3.cache.netease.com/tech/2015/11/12/20151112091757bbdcf_550.jpg
+img: 'http://img3.cache.netease.com/tech/2015/11/12/20151112091757bbdcf_550.jpg'
+abbrlink: 63096
+date: 2017-08-25 16:12:19
 ---
 
 
