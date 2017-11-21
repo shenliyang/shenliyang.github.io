@@ -41,7 +41,7 @@ widgets:
 ## 搜索
 jsonContent:
   searchLocal: true
-  searchGoogle: true
+  searchGoogle: false
   posts:
     title: true
     text: true
