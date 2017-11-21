@@ -147,13 +147,16 @@ uyan:
 ## 网站访问统计
 
 ### 网盟CNZZ统计
-cnzz_anaylytics: 1263868967
+cnzz_analytics: 1263868967
 
 ### 百度统计
-baidu_anaylytics: 
+baidu_analytics: 
 
 ### 谷歌统计
-google_anaylytics: 
+google_analytics: 
+
+### 腾讯分析
+tencent_analytics: 
 
 ### 百度文章推送
 baidu_push:

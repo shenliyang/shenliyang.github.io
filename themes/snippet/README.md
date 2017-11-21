@@ -246,11 +246,14 @@ cnzz_anaylytics:
 ### 百度统计 参考网站: [百度统计](https://tongji.baidu.com/)
 baidu_anaylytics: 
 
-### 百度文章推送  参考网站: [百度站长](http://zhanzhang.baidu.com)  
+### 百度文章推送  参考网站: [百度站长](http://zhanzhang.baidu.com/)  
 baidu_push:
 
-### 谷歌统计
+### 谷歌统计 参考网站：[谷歌统计](https://www.google-analytics.com/)
 google_anaylytics: 
+
+### 腾讯分析 参考网站：[腾讯分析](http://ta.qq.com/)
+tencent_analytics: 
 
 
 ## ICON配置 (不配则启用本地Font Icon)
@@ -389,9 +392,13 @@ Gulp 执行启用主题二次开发模式
 ## 最近更新日志
 - 修改loading图片加载Bug
 - 修改table样式覆盖问题
-- 简化主题配置项
-- 优化css样式显示
+- 简化配置项，方便用户下载即可使用
+- 优化Less文件，方便二次开发和专属定制
+- 修改主题样式显示细节
 - 修改主题语言配置 //TODO
+
+- 整理归类统计代码并增加腾讯统计
+- 更新高亮代码库
 
 ## License
 
