@@ -17,12 +17,12 @@ Travis-CI是一个开源的持续构建项目，能够测试和部署；Travis-C
 ## 自动部署集成日志 
 部署状态 | 集成结果 | 参考值
 ---|---|---
-完成时间 | 2017-11-22 14:32:15 | yyyy-mm-dd hh:mm:ss
+完成时间 | 2017-11-22 14:36:07 | yyyy-mm-dd hh:mm:ss
 部署环境 | linux + stable | window \| linux + stable
 部署类型 | push | push \| pull_request \| api \| cron
 启用Sudo | false | false \| true
 仓库地址 | shenliyang/shenliyang.github.io | owner_name/repo_name
-提交分支 | 8ec6cf0194fea4cf9b993f3bf6292d2aa4bb8d31 | hash 16位
-提交信息 | 测试文章页 |
-Job ID   | 305651704 | 
-Job NUM  | 129.1 | 
+提交分支 | 3a37e6f0d513a83259ec187a416b751f60aaca75 | hash 16位
+提交信息 | 修改post |
+Job ID   | 305652862 | 
+Job NUM  | 130.1 | 
