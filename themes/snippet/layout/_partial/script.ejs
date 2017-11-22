@@ -1,4 +1,5 @@
-<%if (is_post() && theme.highlightTheme){%>
+<%if (is_post() == true && theme.highlightTheme){%>
+  <%- is_post() %>
   <%- js('assets/highlight.pack.js?rev=@@hash') %>
   <script>
      hljs.initHighlightingOnLoad(); //初始化代码高亮 
