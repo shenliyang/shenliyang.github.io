@@ -6,10 +6,11 @@
         <div class="branding">
         	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
             <% if(theme.branding){ %>
-                <h2> <%= theme.branding %> </h2
+                <h2> <%= theme.branding %> </h2>
             <% } else { %>
                  <%- image_tag('img/branding.png',{alt:'Snippet 博客主题'}) %>  
             <% } %> 
+            <%- is_post() %>
     	</div>
     </div>
 </header>

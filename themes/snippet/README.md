@@ -156,7 +156,7 @@ jsonContent:
 notification: |- 
             <p>主题已经上线！欢迎下载或更新~ <br/>
             主题下载：<a href="https://github.com/shenliyang/hexo-theme-snippet" title="fork me" target="_blank">Snippet主题</a> <br/>
-            <hr/>接受贡献，包括不限于提交问题与需求，修复代码。欢迎Pull Request。<br/>支持主题：<a href="https://github.com/shenliyang/hexo-theme-snippet/stargazers">Star一下</a></p>
+            <hr/>接受贡献，包括不限于提交问题与需求，修复代码。欢迎Pull Request<br/>支持主题：<a href="https://github.com/shenliyang/hexo-theme-snippet/stargazers">Star一下</a></p>
 
 ## 社交设置{@name:社交工具名字，@icon:社交工具图标，@href:设置工具链接} [参考图标](http://fontawesome.io/icons/)
 social:
@@ -184,6 +184,10 @@ links:
 
 ## 网站宣传语{@branding：网站宣传语(不设置显示本地图片)}
 branding: 从未如此简单有趣
+
+## 设置banner背景图片
+banner:
+    img:
 
 
 ## 首页文章列表缩略图
