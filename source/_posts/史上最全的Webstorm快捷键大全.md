@@ -3,6 +3,8 @@ title: 史上最全的Webstorm快捷键及技巧
 categories: 工具
 tags:
   - Webstrorm
+  - 快捷键
+  - IDE
 comments: true
 img: >-
   http://imgmini.dfshurufa.com/mobile/20160325172758_220bfff17cc1d8fa3fb6c8fae974bde9_2.jpeg
@@ -33,7 +35,7 @@ webstorm官方下载地址：[http://www.jetbrains.com/webstorm/](http://www.jet
 【Ctrl + Shift + / 】块注释与取消块注释
 【Ctrl + W 】增加选择中代码块
 【Ctrl + Shift + W 】减少当前所选内容代码块
-【Alt + Q 】上下文信息 
+【Alt + Q 】上下文信息
 【Ctrl + Alt + L 】格式化代码
 【Ctrl + Alt + I 】自动缩进的行数
 【Tab / Shift + Tab 】缩进/取消缩进选定的行
@@ -146,7 +148,7 @@ webstorm官方下载地址：[http://www.jetbrains.com/webstorm/](http://www.jet
 
 ### 重构类
 ---
-【F5】拷贝当前文件 
+【F5】拷贝当前文件
 【F6】移动当前文件
 【Alt + delete】 安全删除
 【Shift + F6】 重命名
