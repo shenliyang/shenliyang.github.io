@@ -119,7 +119,7 @@ excerptLength: 120
 highlightTheme:
 
 ## ICON配置
-fontAwesome: //cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css
+fontAwesome: https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css
 
 ## 文章过期提醒功能
 warning:
