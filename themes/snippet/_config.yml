@@ -118,8 +118,11 @@ excerptLength: 120
 ## 代码高亮配置
 highlightTheme:
 
+## bootstrap配置
+bootstrap:
+
 ## ICON配置
-fontAwesome: https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css
+fontAwesome:
 
 ## 文章过期提醒功能
 warning:
