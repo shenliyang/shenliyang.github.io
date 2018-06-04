@@ -187,21 +187,21 @@ Atom上的神器，安装之后可以在 window -> activate-power-mode中关闭�
 
 ## 常见问题
 
-1. ### webstorm可以像sublime一样多行选择，比如在sublime中全选一个单词然后使用cmd+d，就可以往下选择一样的单词，然后进入多行模式吗？
+ webstorm可以像sublime一样多行选择，比如在sublime中全选一个单词然后使用cmd+d，就可以往下选择一样的单词，然后进入多行模式吗？
 
-- ***逐个选中多个相同的词***
+### ***逐个选中多个相同的词***
 sublime：Ctrl + D (Ctrl + K可以跳过一个)
 webstrom：Ctrl + K ( Ctrl + Shift + K 可以回退一个)
 
-- ***同时选中所有相同的词***
+### ***同时选中所有相同的词***
 sublime：Alt + F3
 webstrom：Ctrl + Shift + Alt + K
 
-- ***单击左键选择多行***
+### ***单击左键选择多行***
 sublime：按住Ctrl然后单击左键
 webstrom：按住Alt然后单击左键
 
-- ***拖动选择多行***
+### ***拖动选择多行***
 sublime：按住Ctrl + Shift + 鼠标右键 拖动
 webstrom：按住Alt + 鼠标右键 拖动
 
