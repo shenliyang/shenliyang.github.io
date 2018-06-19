@@ -207,8 +207,7 @@ pre {
     width: 100%;
     background:@white_color url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner.jpg);
     background-repeat: repeat;
-    background-attachment: fixed;
-    overflow:hiddle;
+    overflow: hidden;
     .banneriframe {
         width: 100%;
         height: 100%;
@@ -272,13 +271,12 @@ pre {
     margin-bottom: 20px;
     border-bottom: 2px solid #e1e1e1;
     .navbar-collapse{
-        border-top:1px solid @greyish_color
+        border-top:1px solid #ebebeb
     }
     .navbar-brand{
         max-width:80%;
         .text-ellipsis();
-        padding:0;
-        line-height:55px;
+        padding:18px 0 0 0;
         font-size:14px;
         color:@grey5_color;
         display:none;
@@ -349,6 +347,9 @@ pre {
             line-height: 56px;
             font-size: 2em;
             cursor: pointer;
+            &:hover{
+                color: @theme_color
+            }
         }
     }
 

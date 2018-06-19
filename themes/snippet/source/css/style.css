@@ -243,8 +243,7 @@ pre {
   width: 100%;
   background: #fff url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner.jpg);
   background-repeat: repeat;
-  background-attachment: fixed;
-  overflow: hiddle;
+  overflow: hidden;
 }
 .main-header .banneriframe {
   width: 100%;
@@ -304,15 +303,14 @@ pre {
   border-bottom: 2px solid #e1e1e1;
 }
 .main-navigation .navbar-collapse {
-  border-top: 1px solid #f9f9f9;
+  border-top: 1px solid #ebebeb;
 }
 .main-navigation .navbar-brand {
   max-width: 80%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  padding: 0;
-  line-height: 55px;
+  padding: 18px 0 0 0;
   font-size: 14px;
   color: #505050;
   display: none;
@@ -381,6 +379,9 @@ pre {
   line-height: 56px;
   font-size: 2em;
   cursor: pointer;
+}
+.main-navigation .navbar-header i:hover {
+  color: #e67e22;
 }
 /*====================================================
     main post area
