@@ -280,7 +280,8 @@ pre {
         padding:0;
         line-height:55px;
         font-size:14px;
-        color:@grey5_color
+        color:@grey5_color;
+        display:none;
     }
     .menu {
         padding: 0;
@@ -1075,6 +1076,9 @@ pre {
 @media screen and (max-width: 767px) {
     .main-navigation {
         text-align: left;
+        .navbar-brand{
+            display: block;
+        }
         .menu {
             li {
                 display: block;
