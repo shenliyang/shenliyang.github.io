@@ -300,8 +300,21 @@ pre {
   text-align: center;
   background: #fff;
   border-top: 1px solid #ebebeb;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border-bottom: 2px solid #e1e1e1;
+}
+.main-navigation .navbar-collapse {
+  border-top: 1px solid #f9f9f9;
+}
+.main-navigation .navbar-brand {
+  max-width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0;
+  line-height: 55px;
+  font-size: 14px;
+  color: #505050;
 }
 .main-navigation .menu {
   padding: 0;
