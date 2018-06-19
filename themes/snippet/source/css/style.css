@@ -306,11 +306,11 @@ pre {
   border-top: 1px solid #ebebeb;
 }
 .main-navigation .navbar-brand {
-  max-width: 80%;
+  max-width: 90%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  padding: 18px 0 0 0;
+  padding: 19px 0 0 0;
   font-size: 14px;
   color: #505050;
   display: none;
