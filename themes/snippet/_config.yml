@@ -68,14 +68,14 @@ social:
  - name: 邮箱
    icon: envelope-o
    href: mailto:snippet@91h5.cc
- - name: QQ群
-   icon: users
+ - name: 微信
+   icon: weixin
    href: /
  - name: 联系QQ
    icon: qq
    href: /
- - name: 微博
-   icon: weibo
+ - name: QQ群
+   icon: users
    href: /
  - name: RSS
    icon: feed
