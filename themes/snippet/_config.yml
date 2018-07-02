@@ -68,11 +68,11 @@ social:
  - name: 邮箱
    icon: envelope-o
    href: mailto:snippet@91h5.cc
- - name: 微信
-   icon: weixin
-   href: /
  - name: 联系QQ
    icon: qq
+   href: //t.cn/RrdplPG
+ - name: 微信
+   icon: weixin
    href: /
  - name: QQ群
    icon: users
