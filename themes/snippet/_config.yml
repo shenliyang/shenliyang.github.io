@@ -70,7 +70,7 @@ social:
    href: mailto:snippet@91h5.cc
  - name: QQ群
    icon: users
-   href: //jq.qq.com/?_wv=1027&k=5Cl8cXO
+   href: /
  - name: 联系QQ
    icon: qq
    href: /
@@ -115,6 +115,9 @@ defaultImgs:
 
 ## 截取文章首页描述字数
 excerptLength: 120
+
+## 是否开启文章目录
+toc: true
 
 ## 代码高亮配置
 highlightTheme:
