@@ -8,12 +8,12 @@
 ## 自动部署集成日志
 部署状态 | 集成结果 | 参考值
 ---|---|---
-完成时间 | 2018-07-04 09:48:18 | yyyy-mm-dd hh:mm:ss
+完成时间 | 2018-07-05 13:40:26 | yyyy-mm-dd hh:mm:ss
 部署环境 | linux + stable | window \| linux + stable
 部署类型 | push | push \| pull_request \| api \| cron
 启用Sudo | false | false \| true
 仓库地址 | shenliyang/shenliyang.github.io | owner_name/repo_name
-提交分支 | 5219023d699ee938038f7c4cdf0f1d0bfbc3e72f | hash 16位
-提交信息 | Merge pull request #62 from nogajun/japanese |
-Job ID   | 399833731 | 
-Job NUM  | 166.1 | 
+提交分支 | 8d26bce8a4bf992b080d9f42673dfe9cf9e8d8f3 | hash 16位
+提交信息 | 完善语言列表 |
+Job ID   | 400259570 | 
+Job NUM  | 167.1 | 
