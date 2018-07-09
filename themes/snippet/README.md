@@ -437,7 +437,7 @@ npm i hexo-generator-json-content@2.2.0 -S
 
 可能是您忘记预设网站语言，而启用默认语言了，请先在 _config.yml (注意：为hexo的_config.yml配置文件，与themes在同级目录下，不是主题的配置文件!!!) 中调整 language 设定
 
-```
+``` bash
 language: zh-CN
 ```
 
