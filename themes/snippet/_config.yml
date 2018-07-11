@@ -183,7 +183,7 @@ valine:
    appId: xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz
    appKey: erIpQac4azoCmgfBB7Dl9maa
    placeholder: 说点什么吧
-   notify: true
+   notify: false
    verify: false
    avatar: mm
    meta: nick,mail
