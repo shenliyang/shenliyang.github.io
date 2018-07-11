@@ -183,12 +183,11 @@ valine:
    appId: xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz
    appKey: erIpQac4azoCmgfBB7Dl9maa
    placeholder: 说点什么吧
-   notify: false
+   notify: true
    verify: false
    avatar: mm
    meta: nick,mail
-   pageSize: 10,
-   lang: zh-cn
+   pageSize: 10
 
 ## 网站访问统计
 

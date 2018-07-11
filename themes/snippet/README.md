@@ -257,6 +257,18 @@ changyan:
   appid:
   conf:
 
+### Valine评论 参考网站: [valine评论](https://valine.js.org/)
+  valine:
+   enable: true
+   appId:
+   appKey:
+   placeholder: 说点什么吧
+   notify: false // 邮件通知
+   verify: false // 验证码
+   avatar: mm // avatar头像
+   meta: nick,mail // 输入框内容，可选值nick,mail,link
+   pageSize: 10
+
 
 ## 网站访问统计
 
