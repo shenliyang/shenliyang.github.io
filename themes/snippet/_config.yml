@@ -174,8 +174,8 @@ disqus:
 ### 畅言评论(需要ICP备案)
 changyan:
   enable: false
-  appid: cyt8KmUC1
-  conf: prod_855a68d3b3d91855360a6215672a505a
+  appid:
+  conf:
 
 ## Valine评论
 valine:
@@ -186,7 +186,7 @@ valine:
    notify: false
    verify: false
    avatar: mm
-   meta: nick,mail,link
+   meta: nick,mail
    pageSize: 10,
    lang: zh-cn
 
