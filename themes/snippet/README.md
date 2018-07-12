@@ -457,13 +457,9 @@ language: zh-CN
 
 
 ## 版本更新日志
-- 增加文章目录toc功能
-- 修改新增页面模板
-- 增加文章归档时间轴
-- 修改手机导航菜单样式
-- 修改样式细节
-- 增加是否开启文章目录toc功能
+
+- 增加Valine评论
 
 ## License
 
-[MIT](/LICENSE)
+[MIT License](/LICENSE)
