@@ -40,8 +40,8 @@ after_script:
 # E: Build LifeCycle
 
 branches:
-  on:
-   - dev
+  only:
+    - dev
 env:
  global:
    - GH_REF: github.com/shenliyang/shenliyang.github.io.git
