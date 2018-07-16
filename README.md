@@ -8,12 +8,12 @@
 ## 自动部署集成日志
 部署状态 | 集成结果 | 参考值
 ---|---|---
-完成时间 | 2018-07-16 13:41:02 | yyyy-mm-dd hh:mm:ss
+完成时间 | 2018-07-16 13:45:58 | yyyy-mm-dd hh:mm:ss
 部署环境 | linux + stable | window \| linux + stable
 部署类型 | push | push \| pull_request \| api \| cron
 启用Sudo | false | false \| true
 仓库地址 | shenliyang/shenliyang.github.io | owner_name/repo_name
-提交分支 | 9721629b1f5ce699adf0a5c94b01f7c78956ce8c | hash 16位
-提交信息 | 修改travis.yml |
-Job ID   | 404305865 | 
-Job NUM  | 184.1 | 
+提交分支 | 9d412e9c2579a8587f28175b44a583d6c194b312 | hash 16位
+提交信息 | 修改travis 分支配置 |
+Job ID   | 404307119 | 
+Job NUM  | 185.1 | 
