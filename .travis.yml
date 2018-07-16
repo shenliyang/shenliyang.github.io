@@ -1,7 +1,7 @@
 language: node_js
 node_js: stable
 
-sudo: false 
+sudo: false
 
 #cache
 cache:
@@ -23,12 +23,12 @@ install:
 
 before_script:
   - export TZ='Asia/Shanghai'
-  - npm install -g gulp 
+  - npm install -g gulp
   - chmod +x _travis.sh
 
 script:
   - hexo clean && hexo g
-  - gulp 
+  - gulp
 
 after_success:
  # - LAST_BUILD_NUMBER=68
@@ -40,8 +40,8 @@ after_script:
 # E: Build LifeCycle
 
 branches:
-  only:
-    - dev
+  on:
+   - dev
 env:
  global:
    - GH_REF: github.com/shenliyang/shenliyang.github.io.git
