@@ -49,9 +49,7 @@ EOF
   git config user.email ""
   git add .
   git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
-  # Github Pages
   git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
-  # Gitee Pages
   git push --force --quiet "https://${GITEE_TOKEN}@${GITEE_REF}" master:master
 
 }
