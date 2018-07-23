@@ -50,7 +50,7 @@ EOF
   git add .
   git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
   git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
-  git push --force --quiet "https://${GITEE_TOKEN}@${GITEE_REF}" master:master
+  git push --force --quiet "https://shenliyang:${GITEE_TOKEN}@${GITEE_REF}" master:master
 
 }
 
