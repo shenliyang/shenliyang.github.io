@@ -45,4 +45,5 @@ branches:
 env:
  global:
    - GH_REF: github.com/shenliyang/shenliyang.github.io.git
+   - GITEE_REF: gitee.com/shenliyang/shenliyang.git
 
