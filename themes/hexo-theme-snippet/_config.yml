@@ -203,10 +203,10 @@ google_analytics:
 tencent_analytics:
 
 ### 百度站点认证
-baidu-site-verification:
+baidu_site_verification:
 
 ### 百度自动推送
-baidu_push:
+baidu_push: false
 
 #网站主题配置
 since: 2017
