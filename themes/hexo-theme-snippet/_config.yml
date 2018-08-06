@@ -202,7 +202,10 @@ google_analytics:
 ### 腾讯分析
 tencent_analytics:
 
-### 百度文章推送
+### 百度站点认证
+baidu-site-verification:
+
+### 百度自动推送
 baidu_push:
 
 #网站主题配置
