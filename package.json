@@ -50,6 +50,8 @@
         "gulp-rev-append": "^0.1.8",
         "gulp-sequence": "^0.4.6",
         "gulp-uglify": "^2.0.0",
-        "gulp-watch": "^4.3.11"
+        "gulp-watch": "^4.3.11",
+        "jshint": "^2.9.5",
+        "jshint-stylish": "^2.2.1"
     }
 }
