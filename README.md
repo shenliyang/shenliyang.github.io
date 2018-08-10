@@ -8,12 +8,12 @@
 ## 自动部署集成日志
 部署状态 | 集成结果 | 参考值
 ---|---|---
-完成时间 | 2018-08-10 17:28:26 | yyyy-mm-dd hh:mm:ss
+完成时间 | 2018-08-10 17:36:00 | yyyy-mm-dd hh:mm:ss
 部署环境 | linux + stable | window \| linux + stable
 部署类型 | push | push \| pull_request \| api \| cron
 启用Sudo | false | false \| true
 仓库地址 | shenliyang/shenliyang.github.io | owner_name/repo_name
-提交分支 | 99769bf11a29290de7ee606ffe3433f836f1c278 | hash 16位
+提交分支 | 9d605befc14a89287c1086edac834cc80140b160 | hash 16位
 提交信息 | update package.json |
-Job ID   | 414433112 |
-Job NUM  | 214.1 |
+Job ID   | 414436243 |
+Job NUM  | 215.1 |
