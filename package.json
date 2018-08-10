@@ -16,6 +16,9 @@
         "url": "https://github.com/shenliyang/hexo-theme-snippet/issues"
     },
     "homepage": "https://shenliyang.github.io",
+    "hexo": {
+        "version": "3.7.1"
+    },
     "dependencies": {
         "ejs": "^1.0.0",
         "hexo": "^3.3.8",
