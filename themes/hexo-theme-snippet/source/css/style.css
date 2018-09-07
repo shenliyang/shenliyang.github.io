@@ -913,7 +913,7 @@ pre {
   font-size: 1em!important;
   line-height: 1.5em;
   display: inline-block;
-  margin: 0 7px 7px 0;
+  margin: 0 5px 5px 0;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   text-overflow: ellipsis;
