@@ -475,7 +475,7 @@ language: zh-CN
 
 ## 版本更新日志
 
-  - 增加Valine评论
+  - 增加3D云标签功能
 
 ## License
 
