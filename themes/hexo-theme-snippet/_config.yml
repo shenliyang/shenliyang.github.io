@@ -29,14 +29,13 @@ rss: /atom.xml
 
 ## Carousel
 carousel:
-  img: 'http://7xpw2b.com1.z0.glb.clouddn.com/aliyun.jpg'
+  img: './img/head-img.jpg'
   url: 'https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=xs0pypd2'
 
 # 各个小工具的设置
 
 ## widgets
 widgets:
-  - stick
   - search
   - notification
   - social
@@ -44,6 +43,7 @@ widgets:
   - archive
   - tagcloud
   - friends
+  - stick
 
 
 ## 搜索
