@@ -504,7 +504,7 @@ categories:
 
 会使分类Life成为Diary的子分类，而不是并列分类。因此，有必要为您的文章选择尽可能准确的分类。
 
-[Hexo官方文档-分类方法的分歧](https://hexo.io/zh-cn/docs/front-matter#分类和标签)
+Hexo官方文档: [分类方法的分歧](https://hexo.io/zh-cn/docs/front-matter#分类和标签)
 
 ``` bash
 language: zh-CN
