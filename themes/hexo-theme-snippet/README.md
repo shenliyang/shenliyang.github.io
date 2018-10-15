@@ -490,6 +490,15 @@ npm i hexo-generator-json-content@2.2.0 -S
 
 可能是您忘记预设网站语言，而启用默认语言了，请先在Hexo配置中调整 language 设定
 
+#### 7. 关于Hexo分类方法的分歧
+
+> 如果您有过使用WordPress的经验，就很容易误解Hexo的分类方式。WordPress支持对一篇文章设置多个分类，而且这些分类可以是同级的，也可以是父子分类。但是Hexo不支持指定多个同级分类。下面的指定方法：
+categories:
+- Diary
+- Life
+会使分类Life成为Diary的子分类，而不是并列分类。因此，有必要为您的文章选择尽可能准确的分类。
+
+
 ``` bash
 language: zh-CN
 ```
