@@ -9,12 +9,12 @@
 ## 自动部署集成日志
 部署状态 | 集成结果 | 参考值
 ---|---|---
-完成时间 | 2018-10-15 14:53:26 | yyyy-mm-dd hh:mm:ss
+完成时间 | 2018-11-02 14:33:55 | yyyy-mm-dd hh:mm:ss
 部署环境 | linux + stable | window \| linux + stable
 部署类型 | push | push \| pull_request \| api \| cron
 启用Sudo | false | false \| true
 仓库地址 | shenliyang/shenliyang.github.io | owner_name/repo_name
-提交分支 | 204c6cbf264bafa04eda04f4f6395adb0e710112 | hash 16位
-提交信息 | 更新网站公告图片样式 |
-Job ID   | 441512105 |
-Job NUM  | 259.1 |
+提交分支 | 47a6ab73642a6d6640eacaf58b182f0a0e16e358 | hash 16位
+提交信息 | Update themes/hexo-theme-snippet/layout/_widget/stick.ejs |
+Job ID   | 449700903 |
+Job NUM  | 260.1 |
