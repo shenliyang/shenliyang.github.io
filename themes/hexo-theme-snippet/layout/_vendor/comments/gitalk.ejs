@@ -10,9 +10,9 @@
         repo: "<%= theme.gitalk.repo%>",
         owner: "<%= theme.gitalk.owner%>",
         admin: "[<%= theme.gitalk.admin%>]",
-        id: "87",//location.pathname,
+        
         distractionFreeMode: true
     });
     gitalk.render('gitalk-container');
-    console.log(location.pathname);
+    console.log(encodeURIComponent(location.pathname));
 </script>
