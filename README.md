@@ -9,12 +9,12 @@
 ## 自动部署集成日志
 部署状态 | 集成结果 | 参考值
 ---|---|---
-完成时间 | 2019-01-12 18:36:49 | yyyy-mm-dd hh:mm:ss
+完成时间 | 2019-01-12 18:44:56 | yyyy-mm-dd hh:mm:ss
 部署环境 | linux + stable | window \| linux + stable
 部署类型 | push | push \| pull_request \| api \| cron
 启用Sudo | true | false \| true
 仓库地址 | shenliyang/shenliyang.github.io | owner_name/repo_name
-提交分支 | 3b3470a6d0466e8da05b62184f72de7c64a6e06b | hash 16位
-提交信息 | Update gitalk.ejs |
-Job ID   | 478701906 |
-Job NUM  | 280.1 |
+提交分支 | 01b63919952f83c4ae49bd6f9605d885f0c29931 | hash 16位
+提交信息 | Update _config.yml |
+Job ID   | 478703298 |
+Job NUM  | 281.1 |
