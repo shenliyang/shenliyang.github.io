@@ -191,8 +191,8 @@ livere:
 ## Gitalk评论
 gitalk:
    enable: true
-   clientID: 1dfaab77a658ba618590
-   clientSecret: 67caa38acfba3c784a62fcc0874ed2d0f3767db7
+   clientID: d3545832a1ad8389a81e
+   clientSecret: 800f3f401f9b844a63308484a80746ee50411914
    repo: shenliyang.github.io
    owner: shenliyang
    admin: shenliyang
