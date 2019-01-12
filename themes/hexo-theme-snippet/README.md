@@ -526,7 +526,8 @@ categories:
 
 Hexo官方文档: [分类方法的分歧](https://hexo.io/zh-cn/docs/front-matter#分类和标签)
 
-> 没有找到我需要的问题，建议阅读以下文章再 [提Issues](https://github.com/shenliyang/hexo-theme-snippet/issues/new)
+> 没有找到我需要的问题，建议阅读以下文章再 [提Issues](https://github.com/shenliyang/hexo-theme-snippet/issues/new)    
+
 > 强烈推荐阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)、[《如何向开源社区提问题》](https://github.com/seajs/seajs/issues/545) 和 [《如何有效地报告 Bug》](http://www.chiark.greenend.org.uk/%7Esgtatham/bugs-cn.html)、[《如何向开源项目提交无法解答的问题》](https://zhuanlan.zhihu.com/p/25795393)，更好的问题更容易获得帮助。
 
 ## 版本更新日志
