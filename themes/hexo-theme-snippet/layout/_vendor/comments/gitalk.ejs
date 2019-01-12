@@ -1,8 +1,10 @@
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+<link rel="stylesheet" href="https://cdn.bootcss.com/gitalk/1.4.1/gitalk.min.css">
+<script src="https://cdn.bootcss.com/gitalk/1.4.1/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
 <script type="text/javascript">
+    var pathArr = location.pathname.split("/");
+    var pathId = pathArr[pathArr.length-1];
     var gitalk = new Gitalk({
         // Gitalk配置
         clientID: "<%= theme.gitalk.clientID%>",
@@ -10,9 +12,8 @@
         repo: "<%= theme.gitalk.repo%>",
         owner: "<%= theme.gitalk.owner%>",
         admin: "[<%= theme.gitalk.admin%>]",
-        
+        id: "<%= theme.gitalk.id%>" || pathId || location.pathname,
         distractionFreeMode: true
     });
     gitalk.render('gitalk-container');
-    console.log(encodeURIComponent(location.pathname));
 </script>
