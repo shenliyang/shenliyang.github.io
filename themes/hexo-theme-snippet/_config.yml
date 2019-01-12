@@ -30,7 +30,7 @@ rss: /atom.xml
 ## Carousel
 carousel:
   img: './img/head-img.jpg'
-  url: 'https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=xs0pypd2'
+  url: 'javascript:'
 
 # 各个小工具的设置
 
@@ -43,7 +43,6 @@ widgets:
   - archive
   - tagcloud
   - friends
-  - stick
 
 
 ## 搜索
@@ -63,12 +62,6 @@ notification: |-
                 主题下载：<a href="https://github.com/shenliyang/hexo-theme-snippet" title="fork me" target="_blank">Snippet主题</a> <br/>
                 主题使用：<a href="https://github.com/shenliyang/hexo-theme-snippet/blob/master/README.md#常见问题" title="" target="_blank">常见使用问题</a> <br/>
                 支持主题：<a href="https://github.com/shenliyang/hexo-theme-snippet/stargazers">Star一下</a>
-            </p>
-            <hr/>
-            <p>
-                <a href="https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=xs0pypd2" target="_blank">
-                    <img src="http://snippet.shenliyang.com/img/aliyun_tj310.jpg" />
-                </a>
             </p>
 
 ## 社交设置
@@ -172,40 +165,9 @@ reward:
 
 ## 主题评论
 
-### gitment
-gitment:
-  enable: false
-  owner:
-  repo:
-  client_id:
-  client_secret:
-  perPage: 10
-
-### 来必力
-livere:
-  enable: false
-  livere_uid: MTAyMC8zMzA1MS85NjEz
-
-### 友言评论(服务不稳定)
-uyan:
-  enable: false
-  uyan_id: 1966422
-
-### Disqus评论
-disqus:
-  enable: false
-  shortname: snippet
-  count: false
-
-### 畅言评论(需要ICP备案)
-changyan:
-  enable: false
-  appid:
-  conf:
-
 ## Valine评论
 valine:
-   enable: true
+   enable: false
    appId: xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz
    appKey: erIpQac4azoCmgfBB7Dl9maa
    placeholder: 说点什么吧
@@ -214,6 +176,47 @@ valine:
    avatar: mm
    meta: nick,mail
    pageSize: 10
+  
+### 畅言评论(需要ICP备案)
+changyan:
+  enable: false
+  appid:
+  conf:
+
+### 来必力
+livere:
+  enable: false
+  livere_uid: MTAyMC8zMzA1MS85NjEz
+
+## Gitalk评论
+gitalk:
+   enable: true
+   clientID: 1dfaab77a658ba618590
+   clientSecret: 67caa38acfba3c784a62fcc0874ed2d0f3767db7
+   repo: shenliyang.github.io
+   owner: shenliyang
+   admin: shenliyang
+
+### Disqus评论
+disqus:
+  enable: false
+  shortname: snippet
+  count: false
+
+### gitment评论(长期不更新，不建议使用)
+gitment:
+  enable: false
+  owner:
+  repo:
+  client_id:
+  client_secret:
+  perPage: 10
+
+### 友言评论(服务不稳定)
+uyan:
+  enable: false
+  uyan_id: 1966422
+
 
 ## 网站访客统计
 visit_counter:
