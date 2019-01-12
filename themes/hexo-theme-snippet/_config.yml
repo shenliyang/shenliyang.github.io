@@ -193,7 +193,7 @@ gitalk:
    enable: true
    clientID: d3545832a1ad8389a81e
    clientSecret: 800f3f401f9b844a63308484a80746ee50411914
-   repo: shenliyang.github.io
+   repo: hexo-theme-snippet
    owner: shenliyang
    admin: shenliyang
 
