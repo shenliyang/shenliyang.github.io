@@ -3,6 +3,7 @@
 
 <div id="gitalk-container"></div>
 <script type="text/javascript">
+    var pathId = location.pathname;
     var gitalk = new Gitalk({
         // Gitalk配置
         clientID: "<%= theme.gitalk.clientID%>",
@@ -10,7 +11,7 @@
         repo: "<%= theme.gitalk.repo%>",
         owner: "<%= theme.gitalk.owner%>",
         admin: "[<%= theme.gitalk.admin%>]",
-        id: location.pathname,
+        id: pathId,
         distractionFreeMode: true
     });
     gitalk.render('gitalk-container');
