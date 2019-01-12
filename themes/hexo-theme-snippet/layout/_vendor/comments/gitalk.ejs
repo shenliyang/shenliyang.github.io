@@ -2,18 +2,17 @@
 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
-    <script type="text/javascript">
-        var gitalk = new Gitalk({
-
-            // Gitalk配置
-            clientID: "<%= theme.gitalk.clientID%>",
-            clientSecret: "<%= theme.gitalk.clientSecret%>",
-            repo: "<%= theme.gitalk.repo%>",
-            owner: "<%= theme.gitalk.owner%>",
-            admin: "[<%= theme.gitalk.admin%>]",
-            id: location.pathname,
-            distractionFreeMode: true
-        });
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        // Gitalk配置
+        clientID: "<%= theme.gitalk.clientID%>",
+        clientSecret: "<%= theme.gitalk.clientSecret%>",
+        repo: "<%= theme.gitalk.repo%>",
+        owner: "<%= theme.gitalk.owner%>",
+        admin: "[<%= theme.gitalk.admin%>]",
+        id: md5(location.pathname),
+        distractionFreeMode: true
+    });
     gitalk.render('gitalk-container');
-    console.log(location.pathname);
+    console.log(md5(location.pathname));
 </script>

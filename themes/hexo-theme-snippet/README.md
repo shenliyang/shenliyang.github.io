@@ -314,7 +314,7 @@ gitalk:
    clientSecret: "" // Github Application clientSecret
    repo: "hexo-theme-snippet" // 存储你评论 issue 的 Github 仓库名（建议直接用 GitHub Page 的仓库名），注：只写仓库名称，不写完整地址，比如：hexo-theme-snippet, 而不是 https://github.com/shenliyang/hexo-theme-snippet
    owner: shenliyang  // Github 用户名(github登录时用的名称)
-   admin: shenliyang // 这个仓库的管理员，可以有多个，用数组表示，一般写自己用户名即可,
+   admin: shenliyang // 这个仓库的管理员，可以有多个，用数组表示，一般写自己用户名即可
 
 ## 网站访客统计 [不蒜子统计](http://busuanzi.ibruce.info/)
 visit_counter:
