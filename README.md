@@ -9,12 +9,12 @@
 ## 自动部署集成日志
 部署状态 | 集成结果 | 参考值
 ---|---|---
-完成时间 | 2019-01-19 21:08:06 | yyyy-mm-dd hh:mm:ss
+完成时间 | 2019-01-21 14:31:22 | yyyy-mm-dd hh:mm:ss
 部署环境 | linux + stable | window \| linux + stable
 部署类型 | push | push \| pull_request \| api \| cron
 启用Sudo | true | false \| true
 仓库地址 | shenliyang/shenliyang.github.io | owner_name/repo_name
-提交分支 | 00f860a60e1f1c6c150337e470e65f51719ea8e1 | hash 16位
-提交信息 | 改用原生方法和修改ios的hover兼容问题 |
-Job ID   | 481741011 |
-Job NUM  | 287.1 |
+提交分支 | 2ea8e9325fda0b670edd6178e4f01371d66083b3 | hash 16位
+提交信息 | Merge branch 'dev' of https://github.com/shenliyang/shenliyang.github.io into dev |
+Job ID   | 482272318 |
+Job NUM  | 288.1 |
