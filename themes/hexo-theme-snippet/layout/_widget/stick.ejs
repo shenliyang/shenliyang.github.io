@@ -1,13 +1,17 @@
 <div class="widget_stick">
-    <div class="stick"> <strong>优惠活动推荐</strong>
+    <div class="stick"> <strong>阿里云优惠活动推荐</strong>
     <!--
         <h2>发送邮件:</h2>
         <p>发送地址:&nbsp; <a href="mailto:snippet@91h5.cc" target="_blank"> snippet@91h5.cc</a>
         </p>
     -->
         <p>
-            <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=xs0pypd2" target="_blank">
+            <!-- <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=xs0pypd2" target="_blank">
                 <img src="http://snippet.shenliyang.com/img/aliyun_djq1888.png">
+            </a> -->
+            <br/>
+            <a class="activity" href="https://www.aliyun.com/acts/product-section-2019/new-users?userCode=xs0pypd2" target="_blank">
+                <img src="https://img.alicdn.com/tfs/TB1o069HYrpK1RjSZTEXXcWAVXa-540-250.jpg" />
             </a>
         </p>
         <hr/>
@@ -64,6 +68,10 @@
     color:#00c1de
 }
 
+.widget_stick .stick p a.activity{
+    animation: proRotate 2s ease-in-out 4s 3;
+}
+
 .widget_stick .stick strong {
     margin: -1px 0 0 0;
     display: inline-block;
@@ -78,12 +86,21 @@
     width: 100%;
     max-width: 100%;
 }
+
 .widget_stick .stick h3 {
     font-size: 15px;
     line-height: 20px;
     font-weight: 600;
 }
 
+@-webkit-keyframes proRotate { 
+    from {-webkit-transform:perspective(400px) rotateY(360deg)} 
+    to {-webkit-transform:perspective(400px) rotateY(0deg)} 
+}
+@keyframes proRotate { 
+    from {-webkit-transform:perspective(400px) rotateY(360deg)} 
+    to {-webkit-transform:perspective(400px) rotateY(0deg)} 
+}
 
 </style>
 
