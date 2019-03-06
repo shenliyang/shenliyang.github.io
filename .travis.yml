@@ -18,11 +18,11 @@ notifications:
     on_failure: always 
 
   # 邮件发送部署结果通知
-  # email:
-  #   recipients:
-  #     - snippet@91h5.cc
-  #   on_success: change
-  #   on_failure: always
+  email:
+    recipients:
+      - snippet@91h5.cc
+    on_success: change
+    on_failure: always
 
 # S: Build Lifecycle
 install:
