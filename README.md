@@ -9,12 +9,12 @@
 ## 自动部署集成日志
 部署状态 | 集成结果 | 参考值
 ---|---|---
-完成时间 | 2019-03-06 13:51:18 | yyyy-mm-dd hh:mm:ss
+完成时间 | 2019-03-06 14:01:09 | yyyy-mm-dd hh:mm:ss
 部署环境 | linux + stable | window \| linux + stable
 部署类型 | push | push \| pull_request \| api \| cron
 启用Sudo | true | false \| true
 仓库地址 | shenliyang/shenliyang.github.io | owner_name/repo_name
-提交分支 | b8189ae5e967dfbd554317bfa0e88d39e9e7a5bb | hash 16位
-提交信息 | 测试钉钉机器人通知方式 |
-Job ID   | 502407234 |
-Job NUM  | 297.1 |
+提交分支 | 109afa216e2a805e4bcd274e6db3d5aa953ff8f3 | hash 16位
+提交信息 | 测试部署结果 |
+Job ID   | 502409326 |
+Job NUM  | 298.1 |
