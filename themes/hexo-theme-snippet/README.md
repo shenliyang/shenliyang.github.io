@@ -22,7 +22,7 @@ Snippet 简洁而不简单，也许是一款你寻找已久hexo主题。
 
 ## 主题特点
 
-- [x] 原生JavaScript实现
+- [x] 原生JavaScript实现，去jQuery化
 - [x] 样式支持CSS预处理器Less，方便主题自定义
 - [x] 文章过期提醒功能
 - [x] 文章阅读进度条

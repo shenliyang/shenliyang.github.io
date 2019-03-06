@@ -9,6 +9,7 @@ cache:
     - "node_modules"
 
 notifications:
+  webhooks: https://oapi.dingtalk.com/robot/send?access_token=${DINGDING_ACCESS_TOKEN}
   email:
     recipients:
       - snippet@91h5.cc
