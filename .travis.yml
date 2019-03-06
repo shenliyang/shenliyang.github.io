@@ -9,7 +9,7 @@ cache:
     - "node_modules"
 
 notifications:
-  webhooks: https://oapi.dingtalk.com/robot/send?access_token=${DD_ACCESS_TOKEN}
+  webhooks: https://oapi.dingtalk.com/robot/send?access_token=${DINGDING_TOKEN}
   # email:
   #   recipients:
   #     - snippet@91h5.cc
@@ -47,4 +47,5 @@ env:
  global:
    - GH_REF: github.com/shenliyang/shenliyang.github.io.git
    - GITEE_REF: gitee.com/shenliyang/shenliyang.git
+   - DINGDING_TOKEN: ${DD_ACCESS_TOKEN}
 
