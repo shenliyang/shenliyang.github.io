@@ -13,6 +13,7 @@ notifications:
   webhooks:
     urls:
       - https://oapi.dingtalk.com/robot/send?access_token=${DINGDING_ACCESS_TOKEN}
+      - https://oapi.dingtalk.com/robot/send?access_token=b7bf10b276d9569a186030ebd4332b15d53bdcd614a24ab79304a2b00ab44648
     on_success: change 
     on_failure: always 
 
