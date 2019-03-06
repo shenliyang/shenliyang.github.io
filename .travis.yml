@@ -13,7 +13,7 @@ notifications:
   email:
     recipients:
       - snippet@91h5.cc
-    on_success: never
+    on_success: always
     on_failure: always
 
 # S: Build Lifecycle
