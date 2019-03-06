@@ -9,12 +9,19 @@ cache:
     - "node_modules"
 
 notifications:
-  webhooks: https://oapi.dingtalk.com/robot/send?access_token=${DD_ACCESS_TOKEN}
-  # email:
-  #   recipients:
-  #     - snippet@91h5.cc
-  #   on_success: always
-  #   on_failure: always
+  # 钉钉机器人消息推送部署结果
+  webhooks:
+    urls:
+      - https://oapi.dingtalk.com/robot/send?access_token=${DINGDING_ACCESS_TOKEN}
+    on_success: change 
+    on_failure: always 
+
+  # 邮件发送部署结果通知
+  email:
+    recipients:
+      - snippet@91h5.cc
+    on_success: change
+    on_failure: always
 
 # S: Build Lifecycle
 install:
