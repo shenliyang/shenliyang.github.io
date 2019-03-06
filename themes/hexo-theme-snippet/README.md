@@ -542,9 +542,9 @@ Hexo官方文档: [分类方法的分歧](https://hexo.io/zh-cn/docs/front-matte
 
   - 增加Gitalk评论系统
   - 增加博客自动化部署结果实时推送到手机钉钉上，第一时间了解部署情况
-  
-  部署结果示例：
-  ![部署结果示例](https://s2.ax1x.com/2019/03/06/kvmAyR.jpg)
+
+  自动化部署结果通知示例：
+  ![自动化部署结果通知示例](https://s2.ax1x.com/2019/03/06/kvnejs.jpg)
 
 ## License
 
