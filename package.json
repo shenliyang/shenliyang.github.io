@@ -52,7 +52,6 @@
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
     "jshint": "^2.9.5",
-    "jshint-stylish": "^2.2.1",
-    "notify-send": "^0.1.2"
+    "jshint-stylish": "^2.2.1"
   }
 }
