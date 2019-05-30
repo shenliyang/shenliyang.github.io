@@ -461,7 +461,7 @@ hexo clean && hexo g && hexo s -p 4000
 在设计这款主题的时候参考了好多主题和博客的设计和创意，深表感谢！
 
 ## 鼓励
-**如果觉得本主题还不错，== 欢迎  [Star](https://github.com/shenliyang/hexo-theme-snippet/stargazers)下 ==，您的支持和鼓励才是后续更新最大的动力**
+**如果觉得本主题还不错，您的支持和鼓励才是后续更新最大的动力，== 欢迎  [Star](https://github.com/shenliyang/hexo-theme-snippet/stargazers)下 ==**
 
 ![Stargazers over time](https://starchart.cc/shenliyang/hexo-theme-snippet.svg)
 
