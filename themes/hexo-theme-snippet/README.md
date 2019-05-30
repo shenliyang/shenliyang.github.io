@@ -461,11 +461,7 @@ hexo clean && hexo g && hexo s -p 4000
 在设计这款主题的时候参考了好多主题和博客的设计和创意，深表感谢！
 
 ## 支持
-> 主题Star支持增长概览
-
-[![Stargazers over time](https://starchart.cc/shenliyang/hexo-theme-snippet.svg)](https://starchart.cc/shenliyang/hexo-theme-snippet)
-
-如果觉得本主题还不错，== 欢迎  [Star](https://github.com/shenliyang/hexo-theme-snippet/stargazers)下 ==，您的支持和鼓励才是后续更新最大的动力
+**如果觉得本主题还不错，== 欢迎  [Star](https://github.com/shenliyang/hexo-theme-snippet/stargazers)下 ==，您的支持和鼓励才是后续更新最大的动力**
 
 ## 宗旨
 主题宗旨：**致力主题简洁轻量，配置方便开箱即用**，该主题项目会持续维护和更新，不会跑路，请放心使用。
