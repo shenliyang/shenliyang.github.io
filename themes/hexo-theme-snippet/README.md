@@ -19,6 +19,9 @@ Snippet 简洁而不简单，也许是一款你寻找已久hexo主题。
 
 ![hexo-theme-snippet](http://snippet.shenliyang.com/img/snippet-screenshots1000.jpg "Snippet主题")
 
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/shenliyang/hexo-theme-snippet.svg)](https://starchart.cc/shenliyang/hexo-theme-snippet)
 
 ## 主题特点
 
@@ -535,7 +538,7 @@ categories:
 
 Hexo官方文档: [分类方法的分歧](https://hexo.io/zh-cn/docs/front-matter#分类和标签)
 
-> 没有找到你需要的问题解决方案，建议阅读[《你不知道的提Issues技巧》](https://github.com/shenliyang/hexo-theme-snippet#你不知道的提Issues技巧) 再提Issues。  
+> 没有找到你需要的问题解决方案，建议阅读[《你不知道的提Issues技巧》](https://github.com/shenliyang/hexo-theme-snippet#你不知道的提Issues技巧) 再提Issues。
 
 
 ## 版本更新日志
