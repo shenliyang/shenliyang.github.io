@@ -6,6 +6,7 @@
 <script type="text/javascript">
     var gitalk = new Gitalk({
         // Gitalk配置
+        language: "<%= config.language%>",
         clientID: "<%= theme.gitalk.clientID%>",
         clientSecret: "<%= theme.gitalk.clientSecret%>",
         repo: "<%= theme.gitalk.repo%>",

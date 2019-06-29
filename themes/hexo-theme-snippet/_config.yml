@@ -168,7 +168,7 @@ reward:
 
 ## Valine评论
 valine:
-   enable: false
+   enable: true
    appId: xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz
    appKey: erIpQac4azoCmgfBB7Dl9maa
    placeholder: 说点什么吧
@@ -191,13 +191,13 @@ livere:
 
 ## Gitalk评论
 gitalk:
-   enable: true
-   clientID: d3545832a1ad8389a81e
-   clientSecret: 800f3f401f9b844a63308484a80746ee50411914
-   repo: shenliyang.github.io
-   owner: shenliyang
-   admin: shenliyang
-   perPage: 10
+   enable: false
+   clientID:
+   clientSecret:
+   repo:
+   owner:
+   admin:
+   perPage:
    distractionFreeMode: true
 
 ### Disqus评论
