@@ -318,7 +318,7 @@ gitalk:
    owner: shenliyang  // Github 用户名(Github仓库拥有者)
    admin: shenliyang // GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)可以有一个或多个，如果有多名可使用，例如：admin: admin1,admin2 配置
    perPage: 10 // 每次加载的数据大小，最多100
-   distractionFreeMode: true //
+   distractionFreeMode: true // 是否启用无干扰模式，类似Facebook评论框的全屏遮罩效果
 
    // 以下参数主题会默认处理，不需要配置
    language // 语言类型，默认为站点配置中选项
