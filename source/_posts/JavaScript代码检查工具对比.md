@@ -9,7 +9,7 @@ abbrlink: 26064
 date: 2017-04-03 15:51:30
 ---
 
-![image](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503571860528&di=0fecd1d75a0d57851a782f0da053a047&imgtype=jpg&src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D3845209004%2C4113255300%26fm%3D214%26gp%3D0.jpg)
+![image](http://img.mp.sohu.com/upload/20170727/7be6fe0dbc944f6c8bc36f8a3b28ba87.png)
 
 JavaScript代码校验工具能够让你在写代码时避免一些低级的错误。尽管我有很多年的开发经验，我仍然会犯一些语法错误并且忘记处理我的错误。一个好的校验工具或者格式化工具，可以让我避免这些错误，以免浪费我的时间。一个好的校验工具还能确保一个项目保持一个固定的代码风格。
 
