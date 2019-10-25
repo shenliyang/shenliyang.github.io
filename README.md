@@ -9,12 +9,12 @@
 ## 自动部署集成日志
 部署状态 | 集成结果 | 参考值
 ---|---|---
-完成时间 | 2019-10-09 15:23:42 | yyyy-mm-dd hh:mm:ss
+完成时间 | 2019-10-25 13:11:03 | yyyy-mm-dd hh:mm:ss
 部署环境 | linux + 11.12.0 | window \| linux + stable
 部署类型 | push | push \| pull_request \| api \| cron
 启用Sudo | true | false \| true
 仓库地址 | shenliyang/shenliyang.github.io | owner_name/repo_name
-提交分支 | 6b1e0ae9d6e0031b306dfd4ba35a1ffbb9d46985 | hash 16位
-提交信息 | 增加主题网站备案号配置 |
-Job ID   | 595486423 |
-Job NUM  | 350.1 |
+提交分支 | 3a988a334bb63791f5e4bd388cc5d4e52b17f790 | hash 16位
+提交信息 | 增阿里云双11活动 |
+Job ID   | 602642227 |
+Job NUM  | 351.1 |
