@@ -1,1 +1,1 @@
-require('./themes/hexo-theme-snippet/gulpfile');
+require("./themes/hexo-theme-snippet/gulpfile");

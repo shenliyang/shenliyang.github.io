@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: '大白话说前端 - 多看源码多读书，勤于思考善领悟'
+title: "大白话说前端 - 多看源码多读书，勤于思考善领悟"
 subtitle: 从未如此简单有趣
 description: Snippet主题，也许是一款你寻找已久的Hexo主题。
 keywords: hexo主题,snippet
@@ -69,7 +69,6 @@ theme: hexo-theme-snippet
 
 #启动插件
 plugins:
-
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
