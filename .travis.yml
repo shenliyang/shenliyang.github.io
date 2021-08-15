@@ -30,7 +30,6 @@ before_install:
 
 install:
   - npm install
-#  - gem install travis
 #  - travis login --pro --github-token ${GH_TOKEN}
 
 before_script:
