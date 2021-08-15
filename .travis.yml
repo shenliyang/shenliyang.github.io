@@ -49,7 +49,6 @@ after_script:
   - ./_travis.sh
 
 # E: Build LifeCycle
-
 branches:
   only:
     - dev
