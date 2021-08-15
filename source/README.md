@@ -1,6 +1,6 @@
 # 91前端网
 
-[![Build Status](https://www.travis-ci.org/shenliyang/shenliyang.github.io.svg?branch=dev)](https://travis-ci.org/shenliyang/shenliyang.github.io)
+[![Build Status](https://travis-ci.com/shenliyang/shenliyang.github.io.svg?branch=dev)](https://travis-ci.com/shenliyang/shenliyang.github.io)
 [![ImgBot](https://img.shields.io/badge/ImgBot-build-brightgreen.svg)]()
 
 ## 使用Snippet 主题
