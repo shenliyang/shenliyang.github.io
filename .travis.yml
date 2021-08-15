@@ -53,6 +53,7 @@ after_script:
 branches:
   only:
     - dev
+    
 env:
   global:
     - GH_REF: github.com/shenliyang/shenliyang.github.io.git
