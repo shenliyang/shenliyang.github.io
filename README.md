@@ -1,6 +1,6 @@
 # 91前端网
 
-[![Build Status](https://www.travis-ci.org/shenliyang/shenliyang.github.io.svg?branch=dev)](https://travis-ci.org/shenliyang/shenliyang.github.io)
+[![Build Status](https://travis-ci.com/shenliyang/shenliyang.github.io.svg?branch=dev)](https://travis-ci.com/shenliyang/shenliyang.github.io)
 [![ImgBot](https://img.shields.io/badge/ImgBot-build-brightgreen.svg)]()
 
 ## 使用Snippet 主题
@@ -9,12 +9,12 @@
 ## 自动部署集成日志
 部署状态 | 集成结果 | 参考值
 ---|---|---
-完成时间 | 2021-09-11 02:16:16 | yyyy-mm-dd hh:mm:ss
+完成时间 | 2022-03-06 18:58:47 | yyyy-mm-dd hh:mm:ss
 部署环境 | linux + 11.12.0 | window \| linux + stable
 部署类型 | push | push \| pull_request \| api \| cron
 启用Sudo | true | false \| true
 仓库地址 | shenliyang/shenliyang.github.io | owner_name/repo_name
-提交分支 | 8a6f671ded0e5a4c4d3dbd3a8ff632e70a76d41b | hash 16位
-提交信息 | update config |
-Job ID   | 536714835 |
-Job NUM  | 365.1 |
+提交分支 | 1efdbc9d10b66c6aa32142cd9f9882eb9eed121d | hash 16位
+提交信息 | fix:x |
+Job ID   | 562214562 |
+Job NUM  | 366.1 |
