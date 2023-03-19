@@ -17,11 +17,11 @@
   },
   "homepage": "https://shenliyang.github.io",
   "hexo": {
-    "version": "3.9.0"
+    "version": "6.0.0"
   },
   "dependencies": {
     "ejs": "^2.6.1",
-    "hexo": "^3.3.8",
+    "hexo": "6.0.0",
     "hexo-abbrlink": "^2.0.4",
     "hexo-deployer-git": "^1.0.0",
     "hexo-generator-archive": "^0.1.4",
