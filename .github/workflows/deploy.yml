@@ -60,7 +60,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install hexo-cli gulp hexo-deployer-git -g
+          npm install hexo-cli gulp gulp-cli hexo-deployer-git -g
           npm install
           hexo clean && hexo g
           gulp
@@ -68,4 +68,3 @@ jobs:
       - name: Deploy hexo
         run: |
           npm run deploy
-		  
