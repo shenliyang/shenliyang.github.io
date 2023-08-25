@@ -65,11 +65,6 @@ jobs:
           hexo clean && hexo g
           gulp
 
-      # - name: info
-      #   run: |
-      #     ./deploy.sh
-
       - name: Deploy hexo
         run: |
           npm run deploy
-		  
