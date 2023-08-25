@@ -20,7 +20,7 @@ notifications:
   # 邮件发送部署结果通知
   email:
     recipients:
-      - snippet@aliyun.com
+      - 14257483+shenliyang@users.noreply.github.com 
     on_success: change
     on_failure: always
 

@@ -1,0 +1,75 @@
+name: Github Actions For Hexo Auto Deploy
+
+on:
+  push:
+    branches:
+      - dev
+  workflow_dispatch:
+
+env:
+  GIT_USER: shenliyang
+  GIT_EMAIL: 14257483+shenliyang@users.noreply.github.com 
+  GIT_DEPLOY_REPO: shenliyang/shenliyang.github.io
+  GIT_DEPLOY_BRANCH: master
+  
+  GITEE_USER: shenliyang
+  GITEE_DEPLOY_REPO: shenliyang/shenliyang
+  GITEE_DEPLOY_BRANCH: master
+  
+  GIT_SOURCE_REPO: git@github.com:shenliyang/shenliyang.github.io.git
+  GITEE_DESTINATION_REPO: git@gitee.com:shenliyang/shenliyang.git
+
+jobs:
+  build:
+    name: Build on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    strategy:
+      matrix:
+        os: [ubuntu-18.04]
+        node_version: [12.x]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Checkout deploy repo
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ env.GIT_DEPLOY_REPO }}
+          ref: ${{ env.GIT_DEPLOY_BRANCH }}
+          path: .deploy_git
+
+      - name: Use Node.js ${{ matrix.node_version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node_version }}
+
+      - name: Configuration environment
+        env:
+          HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
+        run: |
+          sudo timedatectl set-timezone "Asia/Shanghai"
+          mkdir -p ~/.ssh/
+          echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+          # ssh-keyscan -t rsa gitee.com >> ~/.ssh/known_hosts
+          git config --global user.name $GIT_USER
+          git config --global user.email $GIT_EMAIL
+
+      - name: Install dependencies
+        run: |
+          npm install hexo-cli gulp hexo-deployer-git -g
+          npm install
+          hexo clean && hexo g
+          gulp
+
+      # - name: info
+      #   run: |
+      #     ./deploy.sh
+
+      - name: Deploy hexo
+        run: |
+          npm run deploy
+		  
