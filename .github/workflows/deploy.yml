@@ -1,4 +1,4 @@
-name: Github Actions For Hexo Auto Deploy
+name: Hexo Auto Deploy
 
 on:
   push:
@@ -50,6 +50,8 @@ jobs:
           HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
         run: |
           sudo timedatectl set-timezone "Asia/Shanghai"
+          sudo apt-get update
+          sudo apt-get install libnotify-bin
           mkdir -p ~/.ssh/
           echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
