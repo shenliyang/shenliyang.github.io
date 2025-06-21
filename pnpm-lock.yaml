@@ -11,6 +11,9 @@ importers:
       ejs:
         specifier: ^3.1.10
         version: 3.1.10
+      gulp-cli:
+        specifier: ^3.1.0
+        version: 3.1.0
       hexo:
         specifier: ^7.3.0
         version: 7.3.0(chokidar@3.6.0)

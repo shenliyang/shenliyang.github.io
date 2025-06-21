@@ -3,7 +3,7 @@
   var gulp = require("gulp"),
     less = require("gulp-less"),
     rename = require("gulp-rename"),
-    minifycss = require("gulp-minify-css"),
+    minifycss = require("gulp-clean-css"),
     autoprefixer = require("gulp-autoprefixer"),
     uglify = require("gulp-uglify"),
     jshint = require("gulp-jshint"),
