@@ -2,7 +2,7 @@ name: Deploy Hexo-theme-snippet to GitHub Pages
 
 on:
   push:
-    branches: [dev]  # 只在dev分支推送时触发
+    branches: [dev]
 
 jobs:
   build-and-deploy:
@@ -12,12 +12,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       with:
-        ref: dev  # 明确指定检出dev分支
+        ref: dev
 
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '20'  # Hexo推荐使用Node.js 12+
+        node-version: '20'
 
     - name: Install Hexo and dependencies
       run: |
@@ -29,21 +29,34 @@ jobs:
         hexo clean
         hexo generate
 
-    # 部署到gh-pages分支
+    - name: Update README with deployment info
+      run: |
+        time=$(date '+%Y-%m-%d %H:%M:%S')
+        cat <<EOF >> README.md
+        
+        ## Deployment Information
+        
+        部署状态 | 集成结果 | 参考值
+        ---|---|---
+        完成时间 | $time | yyyy-mm-dd hh:mm:ss
+        部署环境 | $RUNNER_OS + node-${{ env.npm_config_node_version }} | windows \| linux \| macos + node-version
+        部署类型 | ${{ github.event_name }} | push \| pull_request \| workflow_dispatch
+        仓库地址 | ${{ github.repository }} | owner_name/repo_name
+        提交分支 | ${{ github.sha }} | commit hash
+        提交信息 | ${{ github.event.head_commit.message }} |
+        Workflow ID | ${{ github.run_id }} |
+        Workflow NUM | ${{ github.run_number }} |
+        EOF
+        
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add README.md
+        git commit -m "Update README with deployment info" || echo "No changes to commit"
+        git push
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public  # Hexo默认生成的静态文件目录
-        publish_branch: gh-pages  # 部署的目标分支
-        
-    # 或者如果你想部署到main分支的docs文件夹
-    # - name: Deploy to docs folder
-    #   run: |
-    #     mkdir -p docs
-    #     cp -r public/* docs/
-    #     git config --global user.name "GitHub Actions"
-    #     git config --global user.email "actions@github.com"
-    #     git add docs
-    #     git commit -m "Update GitHub Pages"
-    #     git push
+        publish_dir: ./public
+        publish_branch: gh-pages
