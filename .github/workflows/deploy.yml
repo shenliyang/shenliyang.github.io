@@ -34,7 +34,7 @@ jobs:
     - name: Create deployment info file
       run: |
         time=$(date '+%Y-%m-%d %H:%M:%S %Z')
-        cat <<EOF > public/README.md
+        cat <<EOF >> public/README.md
         
         ## 自动部署集成日志
         

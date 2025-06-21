@@ -6,4 +6,3 @@
 ## 使用Snippet 主题
 >  Theme by Snippet [主题下载](https://github.com/shenliyang/hexo-theme-snippet)
 
-## 自动部署集成日志
