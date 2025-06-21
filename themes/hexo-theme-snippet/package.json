@@ -5,10 +5,12 @@
   "author": "shenliyang",
   "license": "MIT",
   "private": true,
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "hexo deploy",
-    "dev": "hexo s"
+    "dev": "hexo s",
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
