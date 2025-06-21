@@ -1,5 +1,7 @@
 # hexo-theme-snippet
 
+> **已升级支持hexo@7+版本**
+
 Snippet 简洁而不简单，也许是一款你寻找已久 hexo 主题。
 
 如果本主题也是你喜欢的菜，请动动手指 [Star](https://github.com/shenliyang/hexo-theme-snippet/stargazers) 支持一下
