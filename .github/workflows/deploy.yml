@@ -19,17 +19,18 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18'
+        node-version: '20'
 
     - name: Install Hexo and dependencies
       run: |
-        npm install -g hexo-cli
+        npm install -g hexo-cli gulp-cli
         npm install
 
     - name: Build static files
       run: |
         hexo clean
         hexo generate
+        gulp build  # 执行 Gulp 构建任务
 
     - name: Create deployment info file
       run: |
