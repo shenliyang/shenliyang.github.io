@@ -75,4 +75,4 @@ plugins:
 deploy:
   type: git
   repo: https://github.com/shenliyang/shenliyang.github.io.git
-  branch: master
+  branch: gh-pages

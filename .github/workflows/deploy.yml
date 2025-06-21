@@ -1,72 +1,49 @@
-name: Hexo Auto Deploy
+name: Deploy Hexo-theme-snippet to GitHub Pages
 
 on:
   push:
-    branches:
-      - dev
-  workflow_dispatch:
-
-env:
-  GIT_USER: shenliyang
-  GIT_EMAIL: 14257483+shenliyang@users.noreply.github.com 
-  GIT_DEPLOY_REPO: shenliyang/shenliyang.github.io
-  GIT_DEPLOY_BRANCH: master
-  
-  GITEE_USER: shenliyang
-  GITEE_DEPLOY_REPO: shenliyang/shenliyang
-  GITEE_DEPLOY_BRANCH: master
-  
-  GIT_SOURCE_REPO: git@github.com:shenliyang/shenliyang.github.io.git
-  GITEE_DESTINATION_REPO: git@gitee.com:shenliyang/shenliyang.git
+    branches: [dev]  # 只在dev分支推送时触发
 
 jobs:
-  build:
-    name: Build on node ${{ matrix.node_version }} and ${{ matrix.os }}
+  build-and-deploy:
     runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
-    strategy:
-      matrix:
-        os: [ubuntu-18.04]
-        node_version: [14.x]
-
+    
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        ref: dev  # 明确指定检出dev分支
 
-      - name: Checkout deploy repo
-        uses: actions/checkout@v2
-        with:
-          repository: ${{ env.GIT_DEPLOY_REPO }}
-          ref: ${{ env.GIT_DEPLOY_BRANCH }}
-          path: .deploy_git
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'  # Hexo推荐使用Node.js 12+
 
-      - name: Use Node.js ${{ matrix.node_version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node_version }}
+    - name: Install Hexo and dependencies
+      run: |
+        npm install -g hexo-cli
+        npm install
 
-      - name: Configuration environment
-        env:
-          HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
-        run: |
-          sudo timedatectl set-timezone "Asia/Shanghai"
-          sudo apt-get update
-          sudo apt-get install libnotify-bin
-          mkdir -p ~/.ssh/
-          echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-          # ssh-keyscan -t rsa gitee.com >> ~/.ssh/known_hosts
-          git config --global user.name $GIT_USER
-          git config --global user.email $GIT_EMAIL
+    - name: Build static files
+      run: |
+        hexo clean
+        hexo generate
 
-      - name: Install dependencies
-        run: |
-          npm install hexo-cli gulp-cli hexo-deployer-git -g
-          npm install
-          hexo clean && hexo g
-          gulp
-
-      - name: Deploy hexo
-        run: |
-          npm run deploy
+    # 部署到gh-pages分支
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public  # Hexo默认生成的静态文件目录
+        publish_branch: gh-pages  # 部署的目标分支
+        
+    # 或者如果你想部署到main分支的docs文件夹
+    # - name: Deploy to docs folder
+    #   run: |
+    #     mkdir -p docs
+    #     cp -r public/* docs/
+    #     git config --global user.name "GitHub Actions"
+    #     git config --global user.email "actions@github.com"
+    #     git add docs
+    #     git commit -m "Update GitHub Pages"
+    #     git push
