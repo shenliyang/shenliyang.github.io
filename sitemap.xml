@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snippet.shenliyang.com/tags/index.html</loc>
+    
+    <lastmod>2025-06-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://snippet.shenliyang.com/archives/26064.html</loc>
+    
+    <lastmod>2025-06-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://snippet.shenliyang.com/archives/47814.html</loc>
     
     <lastmod>2025-06-21</lastmod>
@@ -20,25 +38,7 @@
   </url>
   
   <url>
-    <loc>https://snippet.shenliyang.com/tags/index.html</loc>
-    
-    <lastmod>2025-06-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://snippet.shenliyang.com/categories/index.html</loc>
-    
-    <lastmod>2025-06-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://snippet.shenliyang.com/archives/26064.html</loc>
     
     <lastmod>2025-06-21</lastmod>
     
